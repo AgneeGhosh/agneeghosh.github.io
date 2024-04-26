@@ -45,11 +45,6 @@ img {
   margin-right: 0;
 }
 
-.logo {
-    width: 10%;  /* Example: makes the width responsive to the parent container's width */
-    height: auto; /* Adjusts the height while keeping the aspect ratio */
-}
-
 .breadcrumb, .footer-menu {
   margin: 0;
   padding: 0;
