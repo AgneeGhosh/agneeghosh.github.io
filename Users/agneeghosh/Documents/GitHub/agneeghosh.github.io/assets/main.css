@@ -24,7 +24,13 @@ img {
 
 .float-left {
     float: left;
+    margin-right: 20px; /* Adds some space between the text and the image */
 }
+
+.content {
+    overflow: auto; /* This will contain the float effect within the container */
+}
+
 
 .site-header {
   text-align: center;
