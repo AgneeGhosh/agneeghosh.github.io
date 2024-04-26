@@ -22,6 +22,10 @@ a {
   color: orangered;
 }
 
+body {
+    background-color: #e8ffe9; 
+}
+
 img {
   max-width: 100%;
 }
