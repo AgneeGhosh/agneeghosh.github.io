@@ -1,5 +1,6 @@
 html,
 body {
+background-color: #e5f6d5;
   font: normal 20px 'Georgia', serif;
   line-height: 1.3;
 }
@@ -20,10 +21,6 @@ h6 {
 
 a {
   color: orangered;
-}
-
-body {
-    background-color: #e8ffe9; 
 }
 
 img {
