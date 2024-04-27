@@ -65,13 +65,17 @@ html, body {
   }
   
   main {
-    text-align: center;
-    padding: 20px; /* Standard padding */
-    padding-bottom: 2em; /* Specific bottom padding */
+    display: flex;             /* Use flexbox to allow easy centering */
+    flex-direction: column;    /* Stack child elements vertically */
+    justify-content: center;   /* Center content vertically within the container */
+    align-items: center;       /* Center content horizontally within the container */
+    text-align: center;        /* Center text within any text elements */
+    height: 100vh;             /* Set the height of the main element to full viewport height */
+    padding: 20px;             /* Standard padding */
+    margin: auto;              /* Auto margins for horizontal centering if needed */
     border-bottom: 2px solid #ccc;
-    margin: auto;
-    margin-bottom: 2em; /* Specific bottom margin */
-  }
+    box-sizing: border-box;    /* Include padding and border in the element's total width and height */
+}
   
   @media only screen and (min-width: 45em) {
     main {
