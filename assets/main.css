@@ -58,6 +58,14 @@ header.site-header img {
   object-fit: cover; /* Ensures the image covers the area without distorting, can crop if necessary */
 }
 
+/* Ensure that all images fit their containers without stretching */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove excess space below the image */
+  object-fit: contain; /* Ensures the image is fully visible within its container */
+}
+
 /* Container and row settings */
 .container, .row {
   max-width: 100%;
