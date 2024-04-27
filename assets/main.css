@@ -34,12 +34,29 @@ a {
 }
 
 img {
-  width: 200px; /* Width for the square/rectangle */
-  height: 200px; /* Height for square (make this equal to width for a square) */
-  object-fit: cover; /* Ensures the image covers the area without distorting */
+  width: 70%; /* Set width to 70% of its container */
+  height: auto; /* Height auto for natural aspect ratio */
+  object-fit: cover; /* Cover the defined area without distortion */
   display: block;
   margin: 0 auto; /* Center the image */
-  padding: 10px;
+  padding: 10px; /* Padding around the image, inside the block */
+}
+
+/* Optional: If you want to maintain a perfect square based on width */
+.aspect-ratio-box {
+  width: 70%; /* Width relative to its container */
+  padding-top: 70%; /* Padding-top as the same percentage of width maintains a square */
+  position: relative; /* Establishes a stacking context */
+  margin: 0 auto; /* Center the box */
+}
+
+.aspect-ratio-box img {
+  position: absolute; /* Position the image absolutely within the parent */
+  top: 0;
+  left: 0;
+  width: 100%; /* Fill the entire parent box */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distorting, can crop if necessary */
 }
 
 /* Media Query for tablets */
