@@ -1,33 +1,48 @@
 html, body {
   font: normal 20px 'Georgia', serif;
   line-height: 1.3;
-  text-align: center;
+  text-align: center; /* Ensures text is centered by default, can override as needed */
+}
+
+/* Grid setup */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Creates a 12-column layout */
+  gap: 10px; /* Optional: adds gap between columns */
+}
+
+.row {
+  grid-column: span 12; /* Makes row span all 12 columns */
+}
+
+.col-9 {
+  grid-column: span 9; /* Spans 9 out of 12 columns */
+  /* justify-self: center; Might not be needed if grid is setup correctly */
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin: 0.5em 0 0;
-  text-align: center;
-  padding: 20px 40px; /* Added padding */
+  text-align: center; /* Confirm text alignment */
+  padding: 10px 20px; /* Check if this padding is too generous */
 }
 
 a {
   color: rgb(10, 31, 15);
-  text-align: center;
+  text-align: center; /* Center aligns anchor tags */
 }
 
 img {
   max-width: 80%;
   display: block;
   margin: 0 auto;
-  padding: 40px; /* Existing image padding */
+  padding: 20px; /* Consistency in padding, consider reducing if too large */
 }
 
 .site-header {
   text-align: center;
   margin: 1em 0 3em;
-  padding-bottom: 4em;
-  padding-top: 40px; /* Added top padding */
+  padding: 40px 0 4em; /* Unified vertical padding */
   border-bottom: 1px solid #ccc;
   font: normal 16px 'Helvetica', serif;
   text-transform: uppercase;
@@ -39,28 +54,28 @@ img {
 }
 
 main {
-  padding: 40px; /* Uniform padding added */
+  padding: 20px; /* Reduced padding for a more compact layout */
   border-bottom: 2px solid #ccc;
   margin-bottom: 2em;
-  text-align: left;
+  text-align: left; /* Ensures main text is left-aligned */
 }
 
 .subtitle, .byline, figcaption {
   font-size: 18px;
-  text-align: center;
-  padding: 30px 60px; /* Specific element padding */
+  text-align: center; /* Centers subtitles, bylines, and figcaptions */
+  padding: 15px 30px; /* Reduced padding for a tighter layout */
 }
 
 .other p, .other h3, .other a {
   text-align: center;
-  padding: 20px 40px; /* Padding for 'other' class elements */
+  padding: 10px 20px; /* Reduced padding for 'other' class elements */
 }
 
 footer {
   font: normal 16px 'Helvetica', sans-serif;
   background-color: #222;
   color: #fff;
-  padding: 40px 80px; /* Adjusted padding for footer */
+  padding: 20px 40px; /* Adjusted to a more standard padding */
   line-height: 1.2;
   text-align: center;
 }
