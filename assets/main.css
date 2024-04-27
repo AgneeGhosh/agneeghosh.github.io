@@ -1,3 +1,4 @@
+/* Base styles */
 html, body {
   font: normal 20px 'Georgia', serif;
   line-height: 1.3;
@@ -33,19 +34,19 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%; /* Make the image fill its container */
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+/* Specific styles for the logo to make it smaller */
+header.site-header img {
+  width: 120px; /* Adjust as needed to make the logo smaller */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures the image is fully visible */
 }
 
+/* Styles for images to maintain 16:9 aspect ratio */
 .aspect-ratio-box {
-  width: 100%; /* Full width of its container to fit the screen */
-  padding-top: 56.25%; /* Padding top for 9:16 ratio (9 / 16 * 100) */
+  width: 100%; /* Full width of its container */
+  padding-top: 56.25%; /* 16:9 aspect ratio (9/16 * 100) */
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the box */
 }
 
 .aspect-ratio-box img {
@@ -54,28 +55,13 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image covers the area without distorting, can crop if necessary */
 }
 
+/* Container and row settings */
 .container, .row {
   max-width: 100%;
   overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  /* Keeping full width for responsiveness */
-  .aspect-ratio-box {
-    width: 100%;
-    padding-top: 56.25%; /* Maintain aspect ratio */
-  }
-}
-
-@media (max-width: 480px) {
-  /* Same as above, maintain full width and aspect ratio */
-  .aspect-ratio-box {
-    width: 100%;
-    padding-top: 56.25%;
-  }
 }
 
 .site-header {
