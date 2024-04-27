@@ -67,6 +67,29 @@ img, .bordered {
     text-decoration: none;
 }
 
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    float: right;
+    width: 35%;
+    padding-left: 1.5rem;
+    margin-right: 0;
+    margin-left: 2rem;
+    border-left: 3px solid #005005;
+  }
+  
+  .quote::first-letter {
+    font-size: 3rem;
+    line-height: 0;
+  }
+  
+  .quoted {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+  }
+
 main {
     display: flex;
     flex-direction: column;
