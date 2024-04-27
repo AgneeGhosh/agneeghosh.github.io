@@ -15,16 +15,16 @@ html, body {
   grid-column: span 12; /* Makes row span all 12 columns */
 }
 
-.col-9 {
-  grid-column: span 9; /* Spans 9 out of 12 columns */
-  /* justify-self: center; Might not be needed if grid is setup correctly */
+.col-6 {
+  grid-column: span 6; /* Now spans 6 out of 12 columns */
+  justify-self: center; /* Centers the .col-6 horizontally within the grid, if needed */
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin: 0.5em 0 0;
   text-align: center; /* Confirm text alignment */
-  padding: 10px 20px; /* Check if this padding is too generous */
+  padding: 10px 20px; /* Adjust padding */
 }
 
 a {
