@@ -26,6 +26,7 @@ a {
   text-decoration: none; /* Add this line to remove underline from links */
 }
 
+/* CSS for images */
 img {
   max-width: 100%;
   height: auto;
@@ -41,6 +42,50 @@ img:first-child {
 /* Adjust margin for the last image if necessary */
 img:last-child {
   margin-bottom: 0;
+}
+
+/* CSS for floated images */
+.float-left {
+  float: left;
+  margin-right: 1.5em; /* Adjust margin between floated image and text */
+}
+
+.float-right {
+  float: right;
+  margin-left: 1.5em; /* Adjust margin between floated image and text */
+}
+
+/* CSS for images within figure elements */
+figure {
+  margin: 0 0 1em;
+}
+
+figcaption {
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-size: 14px;
+  font-weight: normal; /* Use font-weight instead of font shorthand */
+}
+
+/* CSS for images within aspect ratio boxes */
+.aspect-ratio-box {
+  position: relative;
+  width: 100%;
+}
+
+.aspect-ratio-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CSS for side images within articles */
+.sideImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Push image behind text content */
 }
 
 /* SITE HEADER WITH NAV*/
