@@ -1,42 +1,92 @@
-/* Base styles */
-html, body {
-  font: normal 20px 'Georgia', serif;
-  line-height: 1.3;
+/* Resetting default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 10px;
+}
+
+/* Header styles */
+.site-header {
+  background-color: #333;
+  padding: 10px;
   text-align: center;
-  color: #333;
 }
 
-img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+.site-header img {
+  max-width: 100%;
 }
 
-/* Styles for quotes */
-aside.quote {
-  display: block;
-  background-color: #f0f0f0;
-  border-left: 5px solid green;
-  padding: 1em;
-  margin: 1em 0;
-  color: #333;
+/* Main content styles */
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-aside.quote .quoted {
-  text-align: right;
+main h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.byline {
   font-style: italic;
-  color: #555;
+  color: #888;
+  margin-bottom: 10px;
 }
 
-/* Styles for subtitles, bylines, and figcaptions */
-.subtitle, .byline, figcaption {
-  font-size: 18px;
-  text-align: center;
-  padding: 1em 2em;
+/* Quote styles */
+.quote {
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
-/* Styles for other elements */
-.other p, .other h3, .other a {
-  text-align: center;
-  padding: 0.5em 1em;
+.quoted {
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .col-6 {
+      width: 100%;
+  }
 }
