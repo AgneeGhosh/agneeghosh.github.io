@@ -17,11 +17,10 @@ a {
 }
 
 img {
-  max-width: 80%;
-  display: block;
-  margin: 0 auto;
-  padding: 20px; /* Adjust as necessary */
-  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  max-width: 80%; /* Adjust this value as needed, smaller percentages or a fixed width */
+  display: block; /* Continues to make the img tag a block element */
+  margin: 0 auto; /* Keeps the image centered within its container */
+  padding: 20px; /* Adds padding on all sides of the image */
 }
 
 /* SITE HEADER WITH NAV */
