@@ -1,76 +1,75 @@
 html, body {
   font: normal 20px 'Georgia', serif;
   line-height: 1.3;
-  text-align: center; /* Ensures text is centered by default, can override as needed */
-  color: #333; /* Ensures consistent text color */
+  text-align: center; /* Center text by default */
+  color: #333; /* Default text color */
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* Creates a 12-column layout */
-  gap: 10px; /* Optional: adds gap between columns */
+  grid-template-columns: repeat(12, 1fr); /* 12-column layout */
+  gap: 10px; /* Space between grid items */
 }
 
 .row {
-  grid-column: span 12; /* Makes row span all 12 columns */
+  grid-column: span 12; /* Full-width grid row */
 }
 
 .col-6 {
-  grid-column: span 6; /* Now spans 6 out of 12 columns */
-  justify-self: center; /* Optionally centers the .col-6 horizontally within the grid */
+  grid-column: span 6; /* Half-width grid column */
+  justify-self: center; /* Center column in the grid space */
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin: 0.5em 0;
-  text-align: center; /* Confirm text alignment */
+  text-align: center;
   padding: 10px 20px;
 }
 
 a {
   color: rgb(10, 31, 15);
-  text-align: center; /* Center aligns anchor tags */
-  text-decoration: none; /* Removes underline from links */
+  text-align: center;
+  text-decoration: none; /* No underline for links */
 }
 
 img {
-  width: 70%; /* Set width to 70% of its container */
-  height: auto; /* Height auto for natural aspect ratio */
-  object-fit: cover; /* Cover the defined area without distortion */
+  width: 70%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover fit without distortion */
   display: block;
-  margin: 0 auto; /* Center the image */
-  padding: 10px; /* Padding around the image, inside the block */
+  margin: 0 auto; /* Center align */
+  padding: 10px; /* Padding around images */
 }
 
-/* Optional: If you want to maintain a perfect square based on width */
 .aspect-ratio-box {
-  width: 70%; /* Width relative to its container */
-  padding-top: 70%; /* Padding-top as the same percentage of width maintains a square */
-  position: relative; /* Establishes a stacking context */
+  width: 70%; /* Relative width */
+  padding-top: 70%; /* Maintain square aspect ratio */
+  position: relative;
   margin: 0 auto; /* Center the box */
 }
 
 .aspect-ratio-box img {
-  position: absolute; /* Position the image absolutely within the parent */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Fill the entire parent box */
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the area without distorting, can crop if necessary */
+  width: 100%; /* Fill the box */
+  height: 100%; /* Fill the box */
+  object-fit: cover; /* Ensure covering */
 }
 
-/* Media Query for tablets */
+/* Responsive adjustments for tablets */
 @media (max-width: 768px) {
   img {
-    width: 150px; /* Smaller dimensions for tablets */
-    height: 150px; /* Equal width and height for a square */
+    width: 150px;
+    height: 150px;
   }
 }
 
-/* Media Query for mobile devices */
+/* Responsive adjustments for mobile devices */
 @media (max-width: 480px) {
   img {
-    width: 100px; /* Even smaller dimensions for mobile */
+    width: 100px;
     height: 100px;
   }
 }
@@ -78,7 +77,7 @@ img {
 .site-header {
   text-align: center;
   margin: 1em 0 3em;
-  padding: 2em 0; /* Unified vertical padding */
+  padding: 2em 0;
   border-bottom: 1px solid #ccc;
   font: normal 16px 'Helvetica', serif;
   text-transform: uppercase;
@@ -86,47 +85,47 @@ img {
 
 .float-left {
   float: left;
-  margin-right: 20px; /* Space between the image and text */
+  margin-right: 20px;
 }
 
 aside.quote {
-  display: block; /* Ensures it is displayed */
-  background-color: #f0f0f0; /* Light grey background to make it stand out */
-  border-left: 5px solid green; /* A green bar on the left side */
-  padding: 1em; /* Padding around the text for better readability */
-  margin: 1em 0; /* Margin for spacing around the aside */
-  color: #333; /* Dark color for the text */
+  display: block;
+  background-color: #f0f0f0;
+  border-left: 5px solid green;
+  padding: 1em;
+  margin: 1em 0;
+  color: #333;
 }
 
 aside.quote .quoted {
-  text-align: right; /* Right aligns the text */
-  font-style: italic; /* Italicize the attribution */
-  color: #555; /* Slightly lighter color for the attribution */
+  text-align: right;
+  font-style: italic;
+  color: #555;
 }
 
 main {
-  padding: 1em; /* Reduced padding for a more compact layout */
+  padding: 1em;
   border-bottom: 2px solid #ccc;
   margin-bottom: 2em;
-  text-align: left; /* Ensures main text is left-aligned */
+  text-align: left;
 }
 
 .subtitle, .byline, figcaption {
   font-size: 18px;
-  text-align: center; /* Centers subtitles, bylines, and figcaptions */
-  padding: 1em 2em; /* Reduced padding for a tighter layout */
+  text-align: center;
+  padding: 1em 2em;
 }
 
 .other p, .other h3, .other a {
   text-align: center;
-  padding: 0.5em 1em; /* Reduced padding for 'other' class elements */
+  padding: 0.5em 1em;
 }
 
 footer {
   font: normal 16px 'Helvetica', sans-serif;
   background-color: #222;
   color: #fff;
-  padding: 1em 2em; /* Adjusted to a more standard padding */
+  padding: 1em 2em;
   line-height: 1.2;
   text-align: center;
 }
