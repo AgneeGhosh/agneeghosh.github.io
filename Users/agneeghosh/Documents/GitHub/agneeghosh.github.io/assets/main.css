@@ -63,7 +63,18 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
   }
-  
+ 
+  .bordered {
+    border: 2px solid #000; /* Adds a solid black border around the image */
+}
+
+.float-left {
+    float: left; /* Makes the image float to the left */
+    margin-right: 10px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Adds space below the image if the text is longer than the image */
+}
+
+
   main {
     display: flex;             /* Use flexbox to allow easy centering */
     flex-direction: column;    /* Stack child elements vertically */
