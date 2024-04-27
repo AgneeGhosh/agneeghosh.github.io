@@ -33,44 +33,46 @@ a {
   text-decoration: none; /* No underline for links */
 }
 
+/* Base style for images */
 img {
-  width: 70%; /* Responsive width */
+  width: 100%; /* Use full container width */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover fit without distortion */
   display: block;
   margin: 0 auto; /* Center align */
-  padding: 10px; /* Padding around images */
+  padding: 0; /* Remove padding for full width usage */
 }
 
+/* Style for maintaining aspect ratio using a container */
 .aspect-ratio-box {
-  width: 70%; /* Relative width */
-  padding-top: 70%; /* Maintain square aspect ratio */
-  position: relative;
+  width: 100%; /* Full width of its container */
+  height: 0; /* Start with zero height */
+  padding-top: 56.25%; /* Aspect ratio of 16:9, change as needed */
+  position: relative; /* Relative position for absolute child positioning */
   margin: 0 auto; /* Center the box */
 }
 
+/* Ensuring the image within the aspect ratio box fills it entirely */
 .aspect-ratio-box img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Fill the box */
-  height: 100%; /* Fill the box */
-  object-fit: cover; /* Ensure covering */
+  width: 100%; /* Fill the width of the box */
+  height: 100%; /* Fill the height of the box */
+  object-fit: cover; /* Cover the area without distorting */
 }
 
-/* Responsive adjustments for tablets */
+/* Responsive adjustments for tablets - remove fixed dimensions to maintain responsiveness */
 @media (max-width: 768px) {
-  img {
-    width: 150px;
-    height: 150px;
+  .aspect-ratio-box {
+    padding-top: 75%; /* Adjust aspect ratio if desired */
   }
 }
 
-/* Responsive adjustments for mobile devices */
+/* Responsive adjustments for mobile devices - remove fixed dimensions to maintain responsiveness */
 @media (max-width: 480px) {
-  img {
-    width: 100px;
-    height: 100px;
+  .aspect-ratio-box {
+    padding-top: 100%; /* Square aspect ratio at very small sizes */
   }
 }
 
