@@ -1,10 +1,12 @@
 html,
 body {
-  font: normal 20px 'Georgia', serif;
+  font-family: 'Georgia', serif;
+  font-size: 20px;
   line-height: 1.3;
 }
 
 h1 {
+  font-size: 2.5em;
   line-height: 1.1;
   margin: 0.5em 0 0;
 }
@@ -14,16 +16,19 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: 1.5em; /* Adjust font sizes as needed */
   line-height: 1.1;
   margin: 0;
 }
 
 a {
   color: orangered;
+  text-decoration: none; /* Add this line to remove underline from links */
 }
 
 img {
   max-width: 100%;
+  height: auto; /* Ensure images maintain aspect ratio */
 }
 
 /* SITE HEADER WITH NAV*/
@@ -33,7 +38,7 @@ img {
   margin: 1em 0 3em;
   padding-bottom: 3em;
   border-bottom: 1px solid #ccc;
-  font: normal 16px 'Helvetica', serif;
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
   text-transform: uppercase;
 }
 
@@ -59,9 +64,8 @@ img {
 
 #logo {
   width: 400px;
+  max-width: 100%; /* Ensure logo does not exceed container width */
 }
-
-
 
 /* BREADCRUMB */
 
@@ -71,14 +75,13 @@ img {
   list-style-type: none;
 }
 
-
 .section-slug {
   color: #666;
-  font: bold 16px 'Helvetica', sans-serif;
+  font-weight: bold; /* Use font-weight instead of font shorthand */
+  font-size: 16px; /* Adjust font size */
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* ACTUAL ARTICLE */
 
@@ -105,15 +108,18 @@ main {
   color: #888; /* Color for the quoted text */
 }
 
+/* MEDIA QUERY */
+
 @media only screen and (min-width: 45em) {
   main {
-    border-bottom: 0 none transparent;
+    border-bottom: none; /* Correct media query to remove border-bottom */
   }
 }
 
-
 .subtitle {
-  font: normal 20px 'Helvetica', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-size: 20px;
+  font-weight: normal; /* Use font-weight instead of font shorthand */
 }
 
 figure {
@@ -121,11 +127,15 @@ figure {
 }
 
 figcaption {
-  font: normal 14px 'Helvetica', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-size: 14px;
+  font-weight: normal; /* Use font-weight instead of font shorthand */
 }
 
 .byline {
-  font: normal 18px 'Helvetica', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-size: 18px;
+  font-weight: normal; /* Use font-weight instead of font shorthand */
   text-transform: uppercase;
   color: #666;
   margin: 2em 0;
@@ -135,7 +145,7 @@ figcaption {
 
 .other {
   font-size: 16px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
 }
 
 .other article {
@@ -161,12 +171,11 @@ figcaption {
   margin-bottom: 5px;
 }
 
-
-
 /* FOOTER */
 
 footer {
-  font: normal 16px 'Helvetica', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-size: 16px;
   background-color: #222;
   color: #fff;
   padding: 2em 0;
@@ -181,5 +190,4 @@ address {
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
