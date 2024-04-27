@@ -1,34 +1,33 @@
-html,
-body {
+html, body {
   font: normal 20px 'Georgia', serif;
   line-height: 1.3;
-  text-align: center; /* Centers text in the body, inheriting to most child elements */
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin: 0.5em 0 0;
-  text-align: center; /* Specifically centers all heading tags */
+  text-align: center;
+  padding: 10px 20px; /* Added padding */
 }
 
 a {
   color: rgb(10, 31, 15);
-  text-align: center; /* Center aligns anchor tags if not inherited */
+  text-align: center;
 }
 
 img {
-  max-width: 80%; /* Adjust this value as needed, smaller percentages or a fixed width */
-  display: block; /* Continues to make the img tag a block element */
-  margin: 0 auto; /* Keeps the image centered within its container */
-  padding: 20px; /* Adds padding on all sides of the image */
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px; /* Existing image padding */
 }
-
-/* SITE HEADER WITH NAV */
 
 .site-header {
   text-align: center;
   margin: 1em 0 3em;
   padding-bottom: 3em;
+  padding-top: 20px; /* Added top padding */
   border-bottom: 1px solid #ccc;
   font: normal 16px 'Helvetica', serif;
   text-transform: uppercase;
@@ -39,35 +38,29 @@ img {
   font-weight: bold;
 }
 
-/* Additional selectors like .site-menu, figure, figcaption, etc. are omitted for brevity */
-
-/* MAIN SECTION */
-
 main {
-  padding-bottom: 2em;
+  padding: 20px; /* Uniform padding added */
   border-bottom: 2px solid #ccc;
   margin-bottom: 2em;
-  text-align: left; /* Overrides global centering if needed */
+  text-align: left;
 }
 
 .subtitle, .byline, figcaption {
-  font-size: 18px; /* Example for subtitle and byline */
-  text-align: center; /* Centers text specifically for these elements */
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 30px; /* Specific element padding */
 }
-
-/* OTHER LINKS */
 
 .other p, .other h3, .other a {
-  text-align: center; /* Center aligns text in .other class elements */
+  text-align: center;
+  padding: 10px 20px; /* Padding for 'other' class elements */
 }
-
-/* FOOTER */
 
 footer {
   font: normal 16px 'Helvetica', sans-serif;
   background-color: #222;
   color: #fff;
-  padding: 2em 0;
+  padding: 20px 40px; /* Adjusted padding for footer */
   line-height: 1.2;
-  text-align: center; /* Centers text in the footer */
+  text-align: center;
 }
