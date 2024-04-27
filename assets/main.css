@@ -21,6 +21,34 @@ h6 {
   margin: 0;
 }
 
+/* Grid system */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  flex: 0 0 50%; /* 50% width for each column */
+  max-width: 50%; /* 50% maximum width for each column */
+  padding: 0 15px; /* Adjust spacing between columns */
+}
+
+/* Ensure main content is centered */
+main {
+  text-align: center;
+}
+
+/* Center images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 a {
   color: orangered;
   text-decoration: none; /* Add this line to remove underline from links */
