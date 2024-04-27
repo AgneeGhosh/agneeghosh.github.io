@@ -29,6 +29,7 @@ a {
 img {
   max-width: 100%;
   height: auto; /* Ensure images maintain aspect ratio */
+  display: block; /* Ensure each image is displayed as a block element */
 }
 
 /* SITE HEADER WITH NAV*/
