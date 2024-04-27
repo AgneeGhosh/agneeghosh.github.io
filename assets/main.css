@@ -34,12 +34,28 @@ a {
 }
 
 img {
-  width: 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height to make the image square */
-  object-fit: cover; /* Cover the square without distorting the image */
+  width: 200px; /* Width for the square/rectangle */
+  height: 200px; /* Height for square (make this equal to width for a square) */
+  object-fit: cover; /* Ensures the image covers the area without distorting */
   display: block;
   margin: 0 auto; /* Center the image */
-  padding: 20px; /* Existing padding */
+  padding: 10px;
+}
+
+/* Media Query for tablets */
+@media (max-width: 768px) {
+  img {
+    width: 150px; /* Smaller dimensions for tablets */
+    height: 150px; /* Equal width and height for a square */
+  }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+  img {
+    width: 100px; /* Even smaller dimensions for mobile */
+    height: 100px;
+  }
 }
 
 .site-header {
