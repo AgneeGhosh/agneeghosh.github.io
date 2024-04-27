@@ -2,9 +2,9 @@ html, body {
   font: normal 20px 'Georgia', serif;
   line-height: 1.3;
   text-align: center; /* Ensures text is centered by default, can override as needed */
+  color: #333; /* Ensures consistent text color */
 }
 
-/* Grid setup */
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr); /* Creates a 12-column layout */
@@ -17,61 +17,60 @@ html, body {
 
 .col-6 {
   grid-column: span 6; /* Now spans 6 out of 12 columns */
-  justify-self: center; /* Centers the .col-6 horizontally within the grid, if needed */
+  justify-self: center; /* Optionally centers the .col-6 horizontally within the grid */
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-  margin: 0.5em 0 0;
+  margin: 0.5em 0;
   text-align: center; /* Confirm text alignment */
-  padding: 10px 20px; /* Adjust padding */
+  padding: 10px 20px;
 }
 
 a {
   color: rgb(10, 31, 15);
   text-align: center; /* Center aligns anchor tags */
+  text-decoration: none; /* Removes underline from links */
 }
 
 img {
   max-width: 80%;
   display: block;
   margin: 0 auto;
-  padding: 20px; /* Consistency in padding, consider reducing if too large */
+  padding: 20px; /* Consistency in padding */
 }
 
 .site-header {
   text-align: center;
   margin: 1em 0 3em;
-  padding: 40px 0 4em; /* Unified vertical padding */
+  padding: 2em 0; /* Unified vertical padding */
   border-bottom: 1px solid #ccc;
   font: normal 16px 'Helvetica', serif;
   text-transform: uppercase;
 }
 
-.site-header a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .float-left {
   float: left;
-  margin-right: 20px; /* Adds space between the floated image and the text */
+  margin-right: 20px; /* Space between the image and text */
 }
 
-.quote {
-  border-left: 3px solid #ccc;
-  padding-left: 15px;
-  margin: 20px 0;
-  background-color: #f9f9f9; /* Light background to make it stand out */
+aside.quote {
+  display: block; /* Ensures it is displayed */
+  background-color: #f0f0f0; /* Light grey background to make it stand out */
+  border-left: 5px solid green; /* A green bar on the left side */
+  padding: 1em; /* Padding around the text for better readability */
+  margin: 1em 0; /* Margin for spacing around the aside */
+  color: #333; /* Dark color for the text */
 }
 
-.quoted {
-  text-align: right;
-  font-style: italic;
+aside.quote .quoted {
+  text-align: right; /* Right aligns the text */
+  font-style: italic; /* Italicize the attribution */
+  color: #555; /* Slightly lighter color for the attribution */
 }
 
 main {
-  padding: 20px; /* Reduced padding for a more compact layout */
+  padding: 1em; /* Reduced padding for a more compact layout */
   border-bottom: 2px solid #ccc;
   margin-bottom: 2em;
   text-align: left; /* Ensures main text is left-aligned */
@@ -80,19 +79,19 @@ main {
 .subtitle, .byline, figcaption {
   font-size: 18px;
   text-align: center; /* Centers subtitles, bylines, and figcaptions */
-  padding: 15px 30px; /* Reduced padding for a tighter layout */
+  padding: 1em 2em; /* Reduced padding for a tighter layout */
 }
 
 .other p, .other h3, .other a {
   text-align: center;
-  padding: 10px 20px; /* Reduced padding for 'other' class elements */
+  padding: 0.5em 1em; /* Reduced padding for 'other' class elements */
 }
 
 footer {
   font: normal 16px 'Helvetica', sans-serif;
   background-color: #222;
   color: #fff;
-  padding: 20px 40px; /* Adjusted to a more standard padding */
+  padding: 1em 2em; /* Adjusted to a more standard padding */
   line-height: 1.2;
   text-align: center;
 }
