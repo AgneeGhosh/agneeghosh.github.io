@@ -61,17 +61,6 @@ img {
   width: 400px;
 }
 
-/* CSS code for floating images */
-.float-left {
-  float: left; /* Floats the image to the left */
-  margin-right: 15px; /* Adds space between the text and the image */
-}
-
-.sideImage img {
-  float: right; /* Floats the image to the right */
-  margin-left: 15px; /* Adds space between the text and the image */
-}
-
 /* BREADCRUMB */
 
 .breadcrumb {
