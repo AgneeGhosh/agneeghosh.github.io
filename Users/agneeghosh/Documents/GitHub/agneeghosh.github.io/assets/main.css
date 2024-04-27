@@ -16,15 +16,18 @@ a {
     color: orangered;
 }
 
-img, .bordered {
-    max-width: 100%; /* max-width for all images, including bordered */
-    border: 2px solid #000; /* Include border style here if all images need it */
+img {
+    max-width: 100%;
+}
+
+.bordered {
+    border: 2px solid #000; /* Specific to elements with .bordered */
 }
 
 .float-left {
     float: left;
-    margin-right: 10px; /* Space between the image and the text */
-    margin-bottom: 10px; /* Space below the image if the text is longer than the image */
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .content {
@@ -36,13 +39,12 @@ img, .bordered {
     margin: 1em 0 3em;
     padding-bottom: 3em;
     border-bottom: 1px solid #ccc;
-    font: 16px 'Helvetica', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .site-header a {
     text-decoration: none;
-    font-weight: bold;
 }
 
 .site-menu li {
@@ -62,9 +64,8 @@ img, .bordered {
 
 .section-slug, .byline {
     color: #666;
-    font: bold 16px 'Helvetica', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .quote {
@@ -73,22 +74,19 @@ img, .bordered {
     float: right;
     width: 35%;
     padding-left: 1.5rem;
-    margin-right: 0;
     margin-left: 2rem;
     border-left: 3px solid #005005;
-  }
+}
   
-  .quote::first-letter {
+.quote::first-letter {
     font-size: 3rem;
     line-height: 0;
-  }
-  
-  .quoted {
-    font-family: Helvetica, Arial, sans-serif;
+}
+
+.quoted {
     font-size: 1rem;
     font-weight: 700;
-    font-style: normal;
-  }
+}
 
 main {
     display: flex;
