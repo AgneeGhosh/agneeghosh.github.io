@@ -28,8 +28,19 @@ a {
 
 img {
   max-width: 100%;
-  height: auto; /* Ensure images maintain aspect ratio */
-  display: block; /* Ensure each image is displayed as a block element */
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5em; /* Add margin to separate images vertically */
+}
+
+/* Adjust margin for the first image if necessary */
+img:first-child {
+  margin-top: 1.5em;
+}
+
+/* Adjust margin for the last image if necessary */
+img:last-child {
+  margin-bottom: 0;
 }
 
 /* SITE HEADER WITH NAV*/
