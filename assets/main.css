@@ -61,7 +61,14 @@ img {
   width: 400px;
 }
 
+.bordered {
+  border: 2px solid black; /* Adjust color and width as needed */
+}
 
+.float-left {
+  float: left; /* This class will make the image float to the left of the content */
+  margin-right: 20px; /* Adds space between the text and the image */
+}
 
 /* BREADCRUMB */
 
