@@ -53,18 +53,21 @@ img {
   font-weight: bold;
 }
 
+.float-left {
+  float: left;
+  margin-right: 20px; /* Adds space between the floated image and the text */
+}
+
 .quote {
-  background-color: #f4f4f4; /* Light grey background */
-  border-left: 5px solid #009688; /* Teal accent line on the left */
-  padding: 10px 20px; /* Padding around the text */
-  margin: 20px 0; /* Space above and below the quote */
-  font-style: italic; /* Italicize the quote */
+  border-left: 3px solid #ccc;
+  padding-left: 15px;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light background to make it stand out */
 }
 
 .quoted {
-  font-weight: bold; /* Bold for the attribution */
-  text-align: right; /* Align the attribution to the right */
-  margin-top: 10px; /* Space between quote and attribution */
+  text-align: right;
+  font-style: italic;
 }
 
 main {
