@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin: 0.5em 0 0;
   text-align: center;
-  padding: 10px 20px; /* Added padding */
+  padding: 20px 40px; /* Added padding */
 }
 
 a {
@@ -20,14 +20,14 @@ img {
   max-width: 80%;
   display: block;
   margin: 0 auto;
-  padding: 20px; /* Existing image padding */
+  padding: 40px; /* Existing image padding */
 }
 
 .site-header {
   text-align: center;
   margin: 1em 0 3em;
-  padding-bottom: 3em;
-  padding-top: 20px; /* Added top padding */
+  padding-bottom: 4em;
+  padding-top: 40px; /* Added top padding */
   border-bottom: 1px solid #ccc;
   font: normal 16px 'Helvetica', serif;
   text-transform: uppercase;
@@ -39,7 +39,7 @@ img {
 }
 
 main {
-  padding: 20px; /* Uniform padding added */
+  padding: 40px; /* Uniform padding added */
   border-bottom: 2px solid #ccc;
   margin-bottom: 2em;
   text-align: left;
@@ -48,19 +48,19 @@ main {
 .subtitle, .byline, figcaption {
   font-size: 18px;
   text-align: center;
-  padding: 15px 30px; /* Specific element padding */
+  padding: 30px 60px; /* Specific element padding */
 }
 
 .other p, .other h3, .other a {
   text-align: center;
-  padding: 10px 20px; /* Padding for 'other' class elements */
+  padding: 20px 40px; /* Padding for 'other' class elements */
 }
 
 footer {
   font: normal 16px 'Helvetica', sans-serif;
   background-color: #222;
   color: #fff;
-  padding: 20px 40px; /* Adjusted padding for footer */
+  padding: 40px 80px; /* Adjusted padding for footer */
   line-height: 1.2;
   text-align: center;
 }
