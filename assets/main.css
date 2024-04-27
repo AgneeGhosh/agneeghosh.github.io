@@ -150,8 +150,8 @@ main {
 
 /* Quote styles */
 .quote {
-  background-color: #999696; /* Light background color */
-  border-left: 4px solid #106f40; /* Left border color */
+  background-color: #d8f3dc; /* Light green background color */
+  border-left: 4px solid #2a9d8f; /* Darker green left border color */
   padding: 20px; /* Padding around the quote */
   margin-bottom: 20px; /* Bottom margin */
 }
@@ -162,7 +162,7 @@ main {
 
 .quoted {
   font-style: italic; /* Italicize the quoted text */
-  color: #05150c; /* Color for the quoted text */
+  color: #264653; /* Dark green color for the quoted text */
 }
 
 /* MEDIA QUERY */
