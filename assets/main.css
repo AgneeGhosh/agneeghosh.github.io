@@ -1,31 +1,19 @@
 html,
 body {
-  font: normal 20px 'Georgia', serif;
-  line-height: 1.3;
+  font: normal 20px/1.3 'Georgia', serif; /* Added line-height directly in font shorthand */
 }
 
-h1 {
-  line-height: 1.1;
-  margin: 0.5em 0 0;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.1;
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0 0; /* Simplified margin settings */
 }
 
 /* Link styles */
 a {
-  color: #007bff; /* Changed link color for better contrast */
+  color: #007bff; /* Consistent link color */
   text-decoration: none;
 }
-
 a:hover {
-  text-decoration: underline; /* Added underline on hover for better visual feedback */
+  text-decoration: underline;
 }
 
 /* Image styles */
@@ -33,8 +21,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Centered images horizontally */
-  margin-bottom: 1.5em; /* Adjusted bottom margin for better spacing */
+  margin: 0 auto 1.5em; /* Combined margin settings for simplicity */
 }
 
 .float-left {
@@ -47,21 +34,18 @@ img {
   margin-left: 1.5em;
 }
 
-figure {
+figure, figcaption {
   margin: 0 0 1em;
-}
-
-figcaption {
-  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
-  font-size: 14px;
+  font-size: 14px; /* Consistent font size for figcaption */
   font-weight: normal;
 }
 
-.aspect-ratio-box {
-  position: relative; /* Establishes a positioning context */
+figcaption {
+  font-family: 'Arial', sans-serif;
 }
 
-.aspect-ratio-box img {
+.aspect-ratio-box, .aspect-ratio-box img {
+  position: relative;
   width: 100%;
   height: auto;
   display: block;
@@ -73,7 +57,6 @@ figcaption {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 /* Header styles */
@@ -81,7 +64,7 @@ figcaption {
   text-align: center;
   margin: 0;
   padding: 1em 0;
-  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
+  font-family: 'Arial', sans-serif;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -92,66 +75,36 @@ figcaption {
 }
 
 .site-header .logo {
-  display: inline-block; /* Ensure the logo is displayed as a block element */
-  margin-right: 20px; /* Adjust the margin for better spacing with other elements */
-}
-
-.site-header a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.site-menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .site-menu li {
   display: inline-block;
   margin-right: 1em;
 }
-
 .site-menu li:last-child {
   margin-right: 0;
 }
 
-/* Additional text styles */
 .additional-text {
   font-style: italic;
-  color: #6c757d; /* Changed color for better readability */
+  color: #6c757d;
 }
 
 .author-name {
   font-weight: bold;
 }
 
-/* Breadcrumb styles */
-.breadcrumb {
+.breadcrumb, .quote {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.section-slug {
-  color: #666;
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-/* Main article styles */
-main {
-  padding-bottom: 2em;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 2em;
-}
-
-/* Quote styles */
 .quote {
-  background-color: #f8d7da; /* Changed background color for better contrast */
-  border-left: 4px solid #dc3545; /* Changed border color for better contrast */
+  background-color: #f8d7da;
+  border-left: 4px solid #dc3545;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -162,79 +115,24 @@ main {
 
 .quoted {
   font-style: italic;
-  color: #000; /* Changed color for better readability */
+  color: #000;
 }
 
-/* Media query */
-@media only screen and (min-width: 45em) {
-  main {
-    border-bottom: none;
-  }
-}
-
-/* Subtitle and byline styles */
-.subtitle,
-.byline {
-  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
-  font-size: 18px; /* Adjusted font size for better readability */
-  font-weight: normal;
+.subtitle, .byline, .other {
+  font-family: 'Arial', sans-serif;
 }
 
 .byline {
   text-transform: uppercase;
-  color: #6c757d; /* Changed color for better readability */
+  color: #6c757d;
   margin: 2em 0;
 }
 
-/* Other links and articles */
-.other {
-  font-size: 16px;
-  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
-}
-
-.other article {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1.5em;
-}
-
-.other h3 {
-  margin-bottom: 1em;
-}
-
-.other p {
-  margin: 0;
-}
-
-.other a {
-  color: #000;
-  text-decoration: none;
-}
-
-.other a:hover {
-  text-decoration: underline; /* Added underline on hover for better visual feedback */
-}
-
-.other img {
-  margin-bottom: 5px;
-}
-
-/* Footer styles */
 footer {
-  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
-  background-color: #343a40; /* Changed background color for better contrast */
+  background-color: #343a40;
   color: #fff;
   padding: 2em 0;
   line-height: 1.2;
-}
-
-.address {
-  font-style: normal;
-}
-
-.footer-menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
