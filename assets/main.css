@@ -1,15 +1,16 @@
-html,
-body {
-  font: normal 20px/1.3 'Georgia', serif; /* Added line-height directly in font shorthand */
+html, body {
+  font: normal 20px/1.3 'Georgia', serif; /* Ensures Georgia is used throughout */
+  background-color: #e8f5e9; /* Pale green background for the entire webpage */
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0 0; /* Simplified margin settings */
+  font-family: 'Georgia', serif; /* Consistency in typography */
 }
 
 /* Link styles */
 a {
-  color: #007bff; /* Consistent link color */
+  color: #26a69a; /* Changed to a green hue to fit the new color scheme */
   text-decoration: none;
 }
 a:hover {
@@ -21,7 +22,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1.5em; /* Combined margin settings for simplicity */
+  margin: 0 auto 1.5em;
 }
 
 .float-left {
@@ -36,12 +37,12 @@ img {
 
 figure, figcaption {
   margin: 0 0 1em;
-  font-size: 14px; /* Consistent font size for figcaption */
+  font-size: 14px;
   font-weight: normal;
 }
 
 figcaption {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Ensuring Helvetica is used for sans-serif */
 }
 
 .aspect-ratio-box, .aspect-ratio-box img {
@@ -64,13 +65,13 @@ figcaption {
   text-align: center;
   margin: 0;
   padding: 1em 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Helvetica for sans-serif consistency */
   text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff; /* Ensuring a clean, white background for the header */
   z-index: 1000;
 }
 
@@ -94,6 +95,7 @@ figcaption {
 
 .author-name {
   font-weight: bold;
+  font-family: 'Georgia', serif; /* Ensures consistency in typography */
 }
 
 .breadcrumb, .quote {
@@ -103,8 +105,8 @@ figcaption {
 }
 
 .quote {
-  background-color: #f8d7da;
-  border-left: 4px solid #dc3545;
+  background-color: #e0f2f1; /* Light green background */
+  border-left: 4px solid #26a69a; /* Darker green border */
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -115,11 +117,11 @@ figcaption {
 
 .quoted {
   font-style: italic;
-  color: #000;
+  color: #4caf50; /* Bright green color for quoted text */
 }
 
 .subtitle, .byline, .other {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif; /* Helvetica for sans-serif consistency */
 }
 
 .byline {
@@ -129,10 +131,18 @@ figcaption {
 }
 
 footer {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  background-color: #343a40;
-  color: #fff;
-  padding: 2em 0;
-  line-height: 1.2;
+  background-color: #bfd6b6; /* Consistent light green accent for footer */
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif; /* Helvetica for sans-serif consistency */
+}
+
+footer a {
+  color: #007bff; /* Maintaining the blue color for links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
