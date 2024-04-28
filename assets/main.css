@@ -71,79 +71,77 @@ figcaption {
   height: 100%;
 }
 
-/* Additional CSS to ensure the header does not overlap the content */
 /* Site Header Improvements */
 .site-header {
-  background-color: #F9F9F9; /* Light grey background for subtle contrast */
+  background-color: #E8F5E9; /* Soft green background */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
-  padding: 15px 20px; /* Increase padding for more space */
+  text-align: center; /* Center elements */
+  padding: 20px 20px; /* Increase padding for more space */
   position: fixed; /* Keep header at top */
   width: 100%; /* Full width */
   top: 0;
   z-index: 1000; /* Above other content */
+  flex-direction: column; /* Stack elements vertically */
 }
 
 /* Logo Adjustments */
 .site-header img {
   height: auto; /* Maintain aspect ratio */
-  width: 120px; /* Set a width that maintains logo clarity */
+  width: 140px; /* Set a width that maintains logo clarity */
+  margin-bottom: 10px; /* Space between logo and navigation */
 }
 
 /* Navigation Improvements */
+nav {
+  width: 100%; /* Full width to center on the page */
+}
+
 nav ul {
-  margin: 0;
+  justify-content: center; /* Center nav items */
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: center; /* Align links with logo */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 nav ul li {
-  margin: 0 10px; /* Add horizontal space between nav items */
+  padding: 10px; /* More padding for clickability */
 }
 
 nav a {
-  color: #333;
+  color: #2E7D32; /* Darker shade of green */
   font-weight: 600; /* Slightly bolder font */
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #007BFF; /* A bright color for hover state */
+  color: #1B5E20; /* Even darker green on hover */
 }
 
 /* CTA Button Enhancements */
 .site-header .cta-button {
   padding: 10px 25px;
-  background-color: #007BFF; /* Eye-catching button color */
+  background-color: #4CAF50; /* Green button color */
   color: #FFFFFF;
   font-size: 1rem; /* Standard readable size */
   border-radius: 25px; /* Rounded edges */
   border: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
+  order: -1; /* Render button above nav on mobile */
 }
 
 .site-header .cta-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Larger shadow on hover */
+  background-color: #388E3C; /* Darker shade on hover */
 }
 
 /* Responsive Design Improvements */
 @media screen and (max-width: 768px) {
   .site-header {
     padding: 10px;
-    flex-direction: column;
-  }
-
-  .site-header img {
-    margin-bottom: 10px; /* Space between logo and nav on small screens */
   }
 
   nav ul {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px; /* Space between nav and the CTA button */
+    flex-direction: column; /* Stack nav items vertically on small screens */
   }
 
   nav ul li {
