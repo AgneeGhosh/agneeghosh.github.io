@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   background-color: #F5F5F5; /* Beige background */
   color: #333333; /* Dark text color */
-  font-family: 'Arial', sans-serif; /* Default font family */
+  font-family: 'Georgia', 'Helvetica', sans-serif; /* Default font family */
 }
 
 /* Layout */
@@ -179,7 +179,7 @@ footer {
   margin-top: auto; /* Push footer to the bottom */
   background-color: #FFFFFF; /* Cream background */
   color: #333333; /* Dark text color */
-  font-family: 'Arial', sans-serif;
+  font-family: 'Georgia', 'Helvetica', sans-serif;
   padding: 1rem 0;
 }
 
