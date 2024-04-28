@@ -1,21 +1,15 @@
 html, body {
-  height: 100%; /* Make sure the body takes at least the full height of the viewport */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Enables flexbox */
-  flex-direction: column; /* Stack children vertically */
-}
-
-body {
-  align-items: center; /* Align children horizontally in the center */
-  justify-content: center; /* Align children vertically in the center */
+  margin: 0;
+  padding: 0;
+  /* Removed the height and flex properties */
 }
 
 .centered-content {
-  width: 100%; /* You can adjust this to fit your design needs */
-  max-width: 960px; /* Set a max-width for the content area */
-  margin: 0 auto; /* This will center the content area if it's smaller than the viewport width */
-  padding: 20px; /* Optional: Adds some padding inside the content area */
-  box-sizing: border-box; /* Makes sure padding doesn't affect the set width */
+  width: 100%;
+  max-width: 960px;
+  margin: 80px auto 0; /* Add top margin to account for the header height */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,14 +71,19 @@ figcaption {
   height: 100%;
 }
 
-/* Header styles */
+/* Additional CSS to ensure the header does not overlap the content */
 .site-header {
-  display: flex; /* Use flexbox to align items */
-  justify-content: space-between; /* Space between logo and navigation */
-  align-items: center; /* Align items vertically */
-  padding: 10px 20px; /* Add padding for breathing space */
-  background-color: #fff; /* Background color, adjust as needed */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed; /* Assuming you want a fixed header */
+  width: 100%; /* Make the header full width */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header is above other content */
 }
 
 .site-header a {
@@ -134,19 +133,21 @@ nav a:hover {
 }
 
 .quote {
-  background-color: #f0fff0; /* Very light green */
-  border-left: 4px solid #8fbc8f; /* Medium green */
+  background-color: #e6f8f0; /* Updated to a more distinct lighter shade of green */
+  border-left: 10px solid #00897b; /* Thicker and more pronounced teal border */
   padding: 20px;
-  margin-bottom: 20px;
-}
-
-.quote p {
-  margin-bottom: 10px;
+  margin: 20px 0; /* Add margin to separate from surrounding content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Georgia', serif; /* Consistent with heading fonts for elegance */
+  font-size: 18px; /* Larger font for emphasis */
+  line-height: 1.6; /* Improved line spacing for readability */
+  color: #004d40; /* Darker green for text to enhance contrast */
 }
 
 .quoted {
   font-style: italic;
-  color: #66cdaa; /* Soft teal */
+  color: #00695c; /* A darker teal for quoted name, enhancing contrast */
+  font-weight: bold; /* Make the quoted name bold */
 }
 
 .subtitle, .byline, .other {
@@ -160,18 +161,39 @@ nav a:hover {
 }
 
 footer {
-  background-color: #004d40; /* Dark teal background to blend with the logo colors */
-  padding: 20px;
+  margin-top: auto; /* Push footer to the bottom */
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 1rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: auto;
+}
+
+.footer-bottom {
   text-align: center;
-  font-size: 0.9em;
-  color: white;
-  display: flex; /* Use flexbox to align items */
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center everything vertically */
-  align-items: center; /* Center everything horizontally */
-  height: 150px; /* Set a fixed height */
-  width: 150px; /* Set a fixed width */
-  margin: auto; /* Center the footer in the page */
+  margin-top: 1rem;
+  border-top: 1px solid #333333;
+  padding-top: 1rem;
 }
 
 .contact-links {
