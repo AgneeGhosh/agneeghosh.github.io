@@ -1,13 +1,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  /* Removed the height and flex properties */
 }
 
 .centered-content {
   width: 100%;
   max-width: 960px;
-  margin: 80px auto 0; /* Add top margin to account for the header height */
+  margin: 160px auto 0; /* Add top margin to account for the header height */
   padding: 20px;
   box-sizing: border-box;
 }
@@ -73,10 +72,10 @@ figcaption {
 
 /* Site Header Improvements */
 .site-header {
-  background-color: #E8F5E9; /* Soft green background */
+  background-color: #4CAF50; /* Green background */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
   text-align: center; /* Center elements */
-  padding: 20px 20px; /* Increase padding for more space */
+  padding: 20px; /* Increase padding for more space */
   position: fixed; /* Keep header at top */
   width: 100%; /* Full width */
   top: 0;
@@ -109,29 +108,13 @@ nav ul li {
 }
 
 nav a {
-  color: #2E7D32; /* Darker shade of green */
+  color: #FFFFFF; /* White color for links */
   font-weight: 600; /* Slightly bolder font */
   transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #1B5E20; /* Even darker green on hover */
-}
-
-/* CTA Button Enhancements */
-.site-header .cta-button {
-  padding: 10px 25px;
-  background-color: #4CAF50; /* Green button color */
-  color: #FFFFFF;
-  font-size: 1rem; /* Standard readable size */
-  border-radius: 25px; /* Rounded edges */
-  border: none;
-  transition: background-color 0.3s ease;
-  order: -1; /* Render button above nav on mobile */
-}
-
-.site-header .cta-button:hover {
-  background-color: #388E3C; /* Darker shade on hover */
 }
 
 /* Responsive Design Improvements */
