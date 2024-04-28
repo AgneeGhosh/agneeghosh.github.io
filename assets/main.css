@@ -98,6 +98,11 @@ figcaption {
   z-index: 1000;
 }
 
+.site-header .logo {
+  display: inline-block; /* Ensure the logo is displayed as a block element */
+  margin-right: 20px; /* Adjust the margin for better spacing with other elements */
+}
+
 .site-header a {
   text-decoration: none;
   font-weight: bold;
