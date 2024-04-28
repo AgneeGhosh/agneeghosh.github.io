@@ -24,37 +24,6 @@ h6 {
   margin: 0;
 }
 
-/* Centering content */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 800px;
-  padding: 0 20px;
-}
-
-.content {
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-span-3-left,
-.col-span-3-right {
-  flex: 1;
-}
-
-.col-6 {
-  flex: 2;
-}
-
 /* Link styles */
 a {
   color: orangered;
@@ -201,16 +170,14 @@ main {
 }
 
 /* Subtitle and byline styles */
-.subtitle {
+.subtitle,
+.byline {
   font-family: 'Helvetica', sans-serif;
-  font-size: 20px;
+  font-size: 20px; /* Apply the same font size to subtitle and byline for consistency */
   font-weight: normal;
 }
 
 .byline {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
   text-transform: uppercase;
   color: #666;
   margin: 2em 0;
