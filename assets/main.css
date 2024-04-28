@@ -1,34 +1,30 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 18px; /* Base text size for the webpage */
-  font-family: 'Arial', sans-serif; /* Consistent font for readability */
-  color: #2E7D32; /* Primary text color in dark green for contrast */
-  background-color: #FFFFFF; /* White background for a clean look */
+  /* Removed the height and flex properties */
 }
 
 .centered-content {
   width: 100%;
   max-width: 960px;
-  margin: 100px auto 0; /* Increased top margin to account for the new header height */
+  margin: 80px auto 0; /* Add top margin to account for the header height */
   padding: 20px;
   box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.5em 0 0.5em; /* Consistent vertical spacing */
+  margin: 0.5em 0 0;
   font-family: 'Georgia', serif;
-  color: #004D40; /* Teal color for headings for a pop of color */
 }
 
 /* Link styles */
 a {
-  color: #00897b; /* Teal color, softer than the heading color for differentiation */
-  text-decoration: none; /* No underline to keep it clean */
+  color: #00897b; /* Teal color */
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: underline; /* Underline on hover for affordance */
-  color: #004d40; /* Darker teal on hover for emphasis */
+  text-decoration: underline;
+  color: #004d40; /* Darker teal on hover */
 }
 
 /* Image styles */
@@ -36,10 +32,9 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1.5em; /* Center images with a margin below */
+  margin: 0 auto 1.5em;
 }
 
-/* Float styles */
 .float-left {
   float: left;
   margin-right: 1.5em;
@@ -50,10 +45,9 @@ img {
   margin-left: 1.5em;
 }
 
-/* Figure and Figcaption styles */
 figure, figcaption {
   margin: 0 0 1em;
-  font-size: 14px; /* Smaller font size for captions */
+  font-size: 14px;
   font-weight: normal;
   text-align: center;
 }
@@ -62,7 +56,6 @@ figcaption {
   font-family: 'Helvetica', sans-serif;
 }
 
-/* Aspect Ratio Box */
 .aspect-ratio-box, .aspect-ratio-box img {
   position: relative;
   width: 100%;
@@ -70,7 +63,6 @@ figcaption {
   display: block;
 }
 
-/* Side Images */
 .sideImage {
   position: absolute;
   top: 0;
@@ -79,16 +71,135 @@ figcaption {
   height: 100%;
 }
 
-/* Footer Improvements */
-footer {
-  background-color: #E8F5E9; /* Light green for footer background */
-  color: #333333; /* Dark text for contrast */
-  font-family: 'Arial', sans-serif;
-  padding: 1rem 0;
-  clear: both; /* Clear floated elements */
+/* Site Header Improvements */
+.site-header {
+  background-color: #E8F5E9; /* Soft green background */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
+  text-align: center; /* Center elements */
+  padding: 20px 20px; /* Increase padding for more space */
+  position: fixed; /* Keep header at top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 1000; /* Above other content */
+  flex-direction: column; /* Stack elements vertically */
 }
 
-/* Footer Content */
+/* Logo Adjustments */
+.site-header img {
+  height: auto; /* Maintain aspect ratio */
+  width: 140px; /* Set a width that maintains logo clarity */
+  margin-bottom: 10px; /* Space between logo and navigation */
+}
+
+/* Navigation Improvements */
+nav {
+  width: 100%; /* Full width to center on the page */
+}
+
+nav ul {
+  justify-content: center; /* Center nav items */
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+nav ul li {
+  padding: 10px; /* More padding for clickability */
+}
+
+nav a {
+  color: #2E7D32; /* Darker shade of green */
+  font-weight: 600; /* Slightly bolder font */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1B5E20; /* Even darker green on hover */
+}
+
+/* CTA Button Enhancements */
+.site-header .cta-button {
+  padding: 10px 25px;
+  background-color: #4CAF50; /* Green button color */
+  color: #FFFFFF;
+  font-size: 1rem; /* Standard readable size */
+  border-radius: 25px; /* Rounded edges */
+  border: none;
+  transition: background-color 0.3s ease;
+  order: -1; /* Render button above nav on mobile */
+}
+
+.site-header .cta-button:hover {
+  background-color: #388E3C; /* Darker shade on hover */
+}
+
+/* Responsive Design Improvements */
+@media screen and (max-width: 768px) {
+  .site-header {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically on small screens */
+  }
+
+  nav ul li {
+    margin: 5px; /* Less margin on smaller screens */
+  }
+}
+
+.additional-text {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+.breadcrumb, .quote {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.quote {
+  background-color: #e6f8f0; /* Updated to a more distinct lighter shade of green */
+  border-left: 10px solid #00897b; /* Thicker and more pronounced teal border */
+  padding: 20px;
+  margin: 20px 0; /* Add margin to separate from surrounding content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Georgia', serif; /* Consistent with heading fonts for elegance */
+  font-size: 18px; /* Larger font for emphasis */
+  line-height: 1.6; /* Improved line spacing for readability */
+  color: #004d40; /* Darker green for text to enhance contrast */
+}
+
+.quoted {
+  font-style: italic;
+  color: #00695c; /* A darker teal for quoted name, enhancing contrast */
+  font-weight: bold; /* Make the quoted name bold */
+}
+
+.subtitle, .byline, .other {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.byline {
+  text-transform: uppercase;
+  color: #6c757d;
+  margin: 2em 0;
+}
+
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 1rem 0;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-evenly;
@@ -96,7 +207,6 @@ footer {
   padding: 1rem;
 }
 
-/* Social Icons */
 .social-icons {
   margin-top: 1rem;
 }
@@ -111,24 +221,22 @@ footer {
   height: auto;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 1rem;
-  border-top: 1px solid #4CAF50; /* Green border for separation */
+  border-top: 1px solid #333333;
   padding-top: 1rem;
 }
 
-/* Contact Links */
 .contact-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 100%; /* Ensure the links use full width of the footer */
   gap: 10px;
 }
 
 .contact-links img {
-  height: 30px;
-  filter: brightness(0) invert(1); /* White icons for contrast and visibility */
+  height: 30px; /* Adjust size as necessary */
+  filter: brightness(0) invert(1); /* Makes the images white to blend into the footer background */
 }
