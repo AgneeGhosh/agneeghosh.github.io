@@ -1,17 +1,17 @@
 /* Reset and basic styles */
 html,
 body {
-  font-family: 'Georgia', serif;
-  font-size: 20px;
-  line-height: 1.3;
+  font-family: 'Arial', sans-serif; /* Changed font family for better readability */
+  font-size: 18px; /* Slightly reduced font size for better readability */
+  line-height: 1.6; /* Increased line height for better readability */
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-size: 2.5em;
-  line-height: 1.1;
-  margin: 0.5em 0 0;
+  font-size: 2.8em; /* Slightly increased font size for emphasis */
+  line-height: 1.2; /* Adjusted line height for better spacing */
+  margin: 0.5em 0 0.8em; /* Adjusted top margin for better spacing */
 }
 
 h2,
@@ -19,15 +19,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.5em;
-  line-height: 1.1;
-  margin: 0;
+  font-size: 1.8em; /* Slightly increased font size for hierarchy */
+  line-height: 1.3; /* Adjusted line height for better spacing */
+  margin: 0.8em 0; /* Adjusted margin for better spacing */
 }
 
 /* Link styles */
 a {
-  color: orangered;
+  color: #007bff; /* Changed link color for better contrast */
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Added underline on hover for better visual feedback */
 }
 
 /* Image styles */
@@ -35,7 +39,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1.5em;
+  margin: 0 auto; /* Centered images horizontally */
+  margin-bottom: 1.5em; /* Adjusted bottom margin for better spacing */
 }
 
 .float-left {
@@ -53,7 +58,7 @@ figure {
 }
 
 figcaption {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
   font-size: 14px;
   font-weight: normal;
 }
@@ -83,14 +88,14 @@ figcaption {
   text-align: center;
   margin: 0;
   padding: 1em 0;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
   text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff; /* Add background color to make the logo stand out */
-  z-index: 1000; /* Ensure the header appears on top of other elements */
+  background-color: #fff;
+  z-index: 1000;
 }
 
 .site-header a {
@@ -116,7 +121,7 @@ figcaption {
 /* Additional text styles */
 .additional-text {
   font-style: italic;
-  color: darkgreen;
+  color: #6c757d; /* Changed color for better readability */
 }
 
 .author-name {
@@ -147,8 +152,8 @@ main {
 
 /* Quote styles */
 .quote {
-  background-color: #d8f3dc;
-  border-left: 4px solid #2a9d8f;
+  background-color: #f8d7da; /* Changed background color for better contrast */
+  border-left: 4px solid #dc3545; /* Changed border color for better contrast */
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -159,7 +164,7 @@ main {
 
 .quoted {
   font-style: italic;
-  color: #264653;
+  color: #000; /* Changed color for better readability */
 }
 
 /* Media query */
@@ -172,21 +177,21 @@ main {
 /* Subtitle and byline styles */
 .subtitle,
 .byline {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 20px; /* Apply the same font size to subtitle and byline for consistency */
+  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
+  font-size: 18px; /* Adjusted font size for better readability */
   font-weight: normal;
 }
 
 .byline {
   text-transform: uppercase;
-  color: #666;
+  color: #6c757d; /* Changed color for better readability */
   margin: 2em 0;
 }
 
 /* Other links and articles */
 .other {
   font-size: 16px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
 }
 
 .other article {
@@ -208,15 +213,19 @@ main {
   text-decoration: none;
 }
 
+.other a:hover {
+  text-decoration: underline; /* Added underline on hover for better visual feedback */
+}
+
 .other img {
   margin-bottom: 5px;
 }
 
 /* Footer styles */
 footer {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif; /* Changed font family for better consistency */
   font-size: 16px;
-  background-color: #222;
+  background-color: #343a40; /* Changed background color for better contrast */
   color: #fff;
   padding: 2em 0;
   line-height: 1.2;
