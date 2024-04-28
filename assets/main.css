@@ -159,7 +159,7 @@ nav a:hover {
   margin: 20px 0; /* Add margin to separate from surrounding content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   font-family: 'Georgia Bold Italic', serif; /* Georgia Bold Italic */
-  font-size: 24px; /* Larger font for emphasis */
+  font-size: 20px; /* Larger font for emphasis */
   line-height: 1.6; /* Improved line spacing for readability */
   color: #333333; /* Dark text color */
   position: relative; /* Positioning for the quote */
@@ -167,7 +167,7 @@ nav a:hover {
 
 .quote:before {
   content: '\201C'; /* Left double quotation mark */
-  font-size: 3em; /* Adjust size as needed */
+  font-size: 2em; /* Adjust size as needed */
   color: #4CAF50; /* Dark green color */
   position: absolute; /* Position the quotation mark */
   top: -0.2em; /* Adjust vertical position */
