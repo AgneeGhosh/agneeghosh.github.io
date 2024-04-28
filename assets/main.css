@@ -58,8 +58,9 @@ figcaption {
 }
 
 .aspect-ratio-box {
-  position: relative;
-  width: 100%;
+  position: relative; /* Establishes a positioning context */
+  height: 400px; /* Example height */
+  width: 100%; /* Full width of the parent element (adjust as necessary) */
 }
 
 .aspect-ratio-box img {
