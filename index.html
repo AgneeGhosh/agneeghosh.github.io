@@ -11,10 +11,10 @@
     <header class="site-header">
         <nav>
             <ul>
-                <li><a href="#main-article">Main Article</a></li>
-                <li><a href="#tree-cover-equity">Tree Cover Equity</a></li>
-                <li><a href="#city-initiatives">City Initiatives</a></li>
-                <li><a href="#community-projects">Community Projects</a></li>
+                <li><a href="#main-article">Home</a></li>
+                <li><a href="#tree-cover-equity">The Need for Tree Cover Equity</a></li>
+                <li><a href="#city-initiatives">The Initiatives of The City of Oakland</a></li>
+                <li><a href="#community-projects">The Need for Community-Based Tree Planting Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -73,7 +73,7 @@
             </p>
 
             <figure>
-              <img src="assets/trees-in-oakland.png" alt="Ferdinand Richardt's 1877 art displays area covered with oak trees at what is now Madison and Eighth streets in downtown Oakland.">
+              <img src="./assets/trees-in-oakland.png" alt="Ferdinand Richardt's 1877 art displays area covered with oak trees at what is now Madison and Eighth streets in downtown Oakland.">
               <figcaption>Ferdinand Richardt's 1877 art displays area covered with oak trees at what is now Madison and Eighth streets in downtown Oakland.</figcaption>
           </figure>
 
@@ -130,10 +130,9 @@
               <h2>Agnee Ghosh</h2>
               <p>Website Designed by Agnee Ghosh</p>
               <div class="social-icons">
-                  <!-- Icons would be inline SVG or <img> tags -->
-                  <!-- Example using <img>: -->
-                  <a href="https://twitter.com/agneeghosh"><img src="assets/twitter-logo.svg" alt="Twitter"></a>
-                  <a href="https://www.linkedin.com/in/agnee-ghosh/"><img src="assets/linkedin-logo.svg" alt="Instagram"></a>
+                  <!-- Update the file names and extensions -->
+                  <a href="https://twitter.com/agneeghosh"><img src="./assets/twitter-logo.svg" alt="Twitter"></a>
+                  <a href="https://www.linkedin.com/in/agnee-ghosh/"><img src="./assets/linkedin-logo.svg" alt="Instagram"></a>
                   <!-- ... other social icons -->
               </div>
           </div>
@@ -149,6 +148,23 @@
           <p>All rights reserved to Agnee Ghosh</p>
       </div>
   </footer>
+  <script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('.site-header');
   
-</body>
-</html>
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        header.classList.add('hide-header');
+      } else {
+        // Scrolling up
+        header.classList.remove('hide-header');
+      }
+  
+      lastScrollTop = scrollTop;
+    });
+  </script>
+  </body>
+  </html>
