@@ -112,11 +112,16 @@ figcaption {
 /* Header styles */
 .site-header {
   text-align: center;
-  margin: 1em 0 3em;
-  padding-bottom: 3em;
-  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 1em 0;
   font-family: 'Helvetica', sans-serif;
   text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Add background color to make the logo stand out */
+  z-index: 1000; /* Ensure the header appears on top of other elements */
 }
 
 .site-header a {
@@ -137,6 +142,16 @@ figcaption {
 
 .site-menu li:last-child {
   margin-right: 0;
+}
+
+/* Additional text styles */
+.additional-text {
+  font-style: italic;
+  color: darkgreen;
+}
+
+.author-name {
+  font-weight: bold;
 }
 
 /* Breadcrumb styles */
