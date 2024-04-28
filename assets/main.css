@@ -95,6 +95,32 @@ figcaption {
   margin-right: 0;
 }
 
+/* Navigation Styles */
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Dark background */
+  text-align: center; /* Center align the navigation items */
+}
+
+nav li {
+  display: inline; /* Display items inline */
+}
+
+nav a {
+  display: inline-block; /* Inline-block elements for links */
+  padding: 10px 15px; /* Padding around links */
+  color: white; /* White text color */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold font */
+}
+
+nav a:hover {
+  background-color: #555; /* Darker background on hover */
+  color: #fff; /* Keep text white on hover */
+}
+
 .additional-text {
   font-style: italic;
   color: #6c757d;
@@ -167,10 +193,11 @@ body {
 }
 
 footer {
-  background-color: #f4f4f4;
+  background-color: #000080; /* Dark navy blue background */
   padding: 20px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 0.9em; /* Smaller font size */
+  color: white; /* Light color text */
 }
 
 .contact-links {
