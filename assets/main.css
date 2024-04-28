@@ -73,6 +73,8 @@ figcaption {
 
 /* Additional CSS to ensure the header does not overlap the content */
 .site-header {
+  background-color: #d4f3cf; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,11 +94,13 @@ figcaption {
 }
 
 .site-header img {
-  height: 60px; /* Increase the height of the logo */
+  height: 80px; /* Adjust to match inspiration */
   margin-left: 20px; /* Add margin to position the logo on the left */
 }
 
 nav ul {
+  font-size: 1rem; /* Adjust to match inspiration */
+  font-weight: 400; /* Adjust to match inspiration */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -133,6 +137,21 @@ nav a:hover {
   nav ul li {
     padding: 5px; /* Reduce padding for smaller screens */
   }
+}
+
+.site-header .cta-button {
+  padding: 10px 20px;
+  background-color: #000; /* Assuming a black button */
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.site-header .cta-button:hover {
+  background-color: #333; /* Darken button on hover */
 }
 
 .additional-text {
