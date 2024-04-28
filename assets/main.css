@@ -1,6 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #F5F5F5; /* Beige background */
+  color: #333333; /* Dark text color */
+  font-family: 'Arial', sans-serif; /* Default font family */
 }
 
 .centered-content {
@@ -14,16 +17,17 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0 0;
   font-family: 'Georgia', serif;
+  color: #333333; /* Dark text color */
 }
 
 /* Link styles */
 a {
-  color: #00897b; /* Teal color */
+  color: #4CAF50; /* Dark green color */
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #004d40; /* Darker teal on hover */
+  color: #388E3C; /* Darker green on hover */
 }
 
 /* Image styles */
@@ -72,7 +76,7 @@ figcaption {
 
 /* Site Header Improvements */
 .site-header {
-  background-color: #4CAF50; /* Green background */
+  background-color: #E0E0E0; /* Eggshell background */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
   text-align: center; /* Center elements */
   padding: 20px; /* Increase padding for more space */
@@ -108,13 +112,13 @@ nav ul li {
 }
 
 nav a {
-  color: #FFFFFF; /* White color for links */
+  color: #333333; /* Dark text color */
   font-weight: 600; /* Slightly bolder font */
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #1B5E20; /* Even darker green on hover */
+  color: #1B5E20; /* Dark green on hover */
 }
 
 /* Responsive Design Improvements */
@@ -134,7 +138,7 @@ nav a:hover {
 
 .additional-text {
   font-style: italic;
-  color: #6c757d;
+  color: #6c757d; /* Grayish text color */
 }
 
 .author-name {
@@ -148,20 +152,20 @@ nav a:hover {
 }
 
 .quote {
-  background-color: #e6f8f0; /* Updated to a more distinct lighter shade of green */
-  border-left: 10px solid #00897b; /* Thicker and more pronounced teal border */
+  background-color: #FFFFFF; /* Cream background */
+  border-left: 10px solid #4CAF50; /* Dark green border */
   padding: 20px;
   margin: 20px 0; /* Add margin to separate from surrounding content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   font-family: 'Georgia', serif; /* Consistent with heading fonts for elegance */
   font-size: 18px; /* Larger font for emphasis */
   line-height: 1.6; /* Improved line spacing for readability */
-  color: #004d40; /* Darker green for text to enhance contrast */
+  color: #333333; /* Dark text color */
 }
 
 .quoted {
   font-style: italic;
-  color: #00695c; /* A darker teal for quoted name, enhancing contrast */
+  color: #4CAF50; /* Dark green for quoted name */
   font-weight: bold; /* Make the quoted name bold */
 }
 
@@ -171,14 +175,14 @@ nav a:hover {
 
 .byline {
   text-transform: uppercase;
-  color: #6c757d;
+  color: #6c757d; /* Grayish text color */
   margin: 2em 0;
 }
 
 footer {
   margin-top: auto; /* Push footer to the bottom */
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #FFFFFF; /* Cream background */
+  color: #333333; /* Dark text color */
   font-family: 'Arial', sans-serif;
   padding: 1rem 0;
 }
