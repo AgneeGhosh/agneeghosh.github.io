@@ -189,7 +189,7 @@ footer {
   font-family: 'Georgia', 'Helvetica', sans-serif, 'Arial', sans-serif; /* Complementary font family */
   font-weight: bold; /* Make the font weight bold */
   padding: 2rem 0; /* Increase padding for better spacing */
-  background-image: url('/Users/agneeghosh/Documents/GitHub/agneeghosh.github.io/assets/footer-background.jpg');
+  background-image: url('Footer-background.jpg'); /* Relative path */
   background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image from repeating */
