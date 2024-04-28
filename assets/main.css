@@ -23,19 +23,31 @@ h6 {
 
 /* Grid system */
 .container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 column layout */
+  gap: 15px; /* Adjust spacing between columns */
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -15px; /* Negative margin to offset the gap */
 }
 
-.col-6 {
-  flex: 0 0 50%; /* 50% width for each column */
-  max-width: 50%; /* 50% maximum width for each column */
+[class^="col-"] {
+  position: relative;
+  width: 100%;
   padding: 0 15px; /* Adjust spacing between columns */
+}
+
+.col-4 {
+  flex: 0 0 calc((100% - 45px) / 3); /* 4 columns per row */
+  max-width: calc((100% - 45px) / 3); /* Maximum width for each column */
+}
+
+.col-8 {
+  flex: 0 0 calc((100% - 45px) * 2 / 3); /* 8 columns per row */
+  max-width: calc((100% - 45px) * 2 / 3); /* Maximum width for each column */
 }
 
 /* Ensure main content is centered */
@@ -47,6 +59,19 @@ main {
 img {
   display: block;
   margin: 0 auto;
+}
+
+/* Add specific classes to span 3 on each side */
+.col-span-3-left {
+  flex: 0 0 calc((100% - 45px) / 4); /* 3 columns per row */
+  max-width: calc((100% - 45px) / 4); /* Maximum width for each column */
+  margin-left: 15px; /* Offset to the left */
+}
+
+.col-span-3-right {
+  flex: 0 0 calc((100% - 45px) / 4); /* 3 columns per row */
+  max-width: calc((100% - 45px) / 4); /* Maximum width for each column */
+  margin-right: 15px; /* Offset to the right */
 }
 
 a {
