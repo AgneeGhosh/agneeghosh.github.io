@@ -92,29 +92,47 @@ figcaption {
 }
 
 .site-header img {
-  height: 50px; /* Adjust the size of your logo */
+  height: 60px; /* Increase the height of the logo */
+  margin-left: 20px; /* Add margin to position the logo on the left */
 }
 
 nav ul {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-  display: flex; /* Display items in a row */
-  gap: 20px; /* Space between nav items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; /* Align items to the right */
 }
 
 nav ul li {
-  padding: 10px; /* Padding for clickable area */
+  padding: 10px;
 }
 
 nav a {
-  text-decoration: none; /* No underline for links */
-  color: #333; /* Color of text, adjust as needed */
-  font-weight: bold; /* Makes text bold */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: #000; /* Color on hover */
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .site-header {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: flex-end; /* Align items to the right */
+  }
+
+  nav ul li {
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
 }
 
 .additional-text {
