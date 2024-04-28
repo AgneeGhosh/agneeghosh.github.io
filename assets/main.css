@@ -1,8 +1,11 @@
+/* Reset and basic styles */
 html,
 body {
   font-family: 'Georgia', serif;
   font-size: 20px;
   line-height: 1.3;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -16,110 +19,76 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.5em; /* Adjust font sizes as needed */
+  font-size: 1.5em;
   line-height: 1.1;
   margin: 0;
 }
 
-/* Grid system */
+/* Centering content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12 column layout */
-  gap: 15px; /* Adjust spacing between columns */
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.content {
+  text-align: center;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px; /* Negative margin to offset the gap */
 }
 
-[class^="col-"] {
-  position: relative;
-  width: 100%;
-  padding: 0 15px; /* Adjust spacing between columns */
-}
-
-.col-4 {
-  flex: 0 0 calc((100% - 45px) / 3); /* 4 columns per row */
-  max-width: calc((100% - 45px) / 3); /* Maximum width for each column */
-}
-
-.col-8 {
-  flex: 0 0 calc((100% - 45px) * 2 / 3); /* 8 columns per row */
-  max-width: calc((100% - 45px) * 2 / 3); /* Maximum width for each column */
-}
-
-/* Ensure main content is centered */
-main {
-  text-align: center;
-}
-
-/* Center images */
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Add specific classes to span 3 on each side */
-.col-span-3-left {
-  flex: 0 0 calc((100% - 45px) / 4); /* 3 columns per row */
-  max-width: calc((100% - 45px) / 4); /* Maximum width for each column */
-  margin-left: 15px; /* Offset to the left */
-}
-
+.col-span-3-left,
 .col-span-3-right {
-  flex: 0 0 calc((100% - 45px) / 4); /* 3 columns per row */
-  max-width: calc((100% - 45px) / 4); /* Maximum width for each column */
-  margin-right: 15px; /* Offset to the right */
+  flex: 1;
 }
 
+.col-6 {
+  flex: 2;
+}
+
+/* Link styles */
 a {
   color: orangered;
-  text-decoration: none; /* Add this line to remove underline from links */
+  text-decoration: none;
 }
 
-/* CSS for images */
+/* Image styles */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1.5em; /* Add margin to separate images vertically */
+  margin: 0 auto 1.5em;
 }
 
-/* Adjust margin for the first image if necessary */
-img:first-child {
-  margin-top: 1.5em;
-}
-
-/* Adjust margin for the last image if necessary */
-img:last-child {
-  margin-bottom: 0;
-}
-
-/* CSS for floated images */
 .float-left {
   float: left;
-  margin-right: 1.5em; /* Adjust margin between floated image and text */
+  margin-right: 1.5em;
 }
 
 .float-right {
   float: right;
-  margin-left: 1.5em; /* Adjust margin between floated image and text */
+  margin-left: 1.5em;
 }
 
-/* CSS for images within figure elements */
 figure {
   margin: 0 0 1em;
 }
 
 figcaption {
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-family: 'Helvetica', sans-serif;
   font-size: 14px;
-  font-weight: normal; /* Use font-weight instead of font shorthand */
+  font-weight: normal;
 }
 
-/* CSS for images within aspect ratio boxes */
 .aspect-ratio-box {
   position: relative;
   width: 100%;
@@ -131,24 +100,22 @@ figcaption {
   display: block;
 }
 
-/* CSS for side images within articles */
 .sideImage {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Push image behind text content */
+  z-index: -1;
 }
 
-/* SITE HEADER WITH NAV*/
-
+/* Header styles */
 .site-header {
   text-align: center;
   margin: 1em 0 3em;
   padding-bottom: 3em;
   border-bottom: 1px solid #ccc;
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-family: 'Helvetica', sans-serif;
   text-transform: uppercase;
 }
 
@@ -172,13 +139,7 @@ figcaption {
   margin-right: 0;
 }
 
-#logo {
-  width: 400px;
-  max-width: 100%; /* Ensure logo does not exceed container width */
-}
-
-/* BREADCRUMB */
-
+/* Breadcrumb styles */
 .breadcrumb {
   margin: 0;
   padding: 0;
@@ -187,14 +148,13 @@ figcaption {
 
 .section-slug {
   color: #666;
-  font-weight: bold; /* Use font-weight instead of font shorthand */
-  font-size: 16px; /* Adjust font size */
+  font-weight: bold;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-/* ACTUAL ARTICLE */
-
+/* Main article styles */
 main {
   padding-bottom: 2em;
   border-bottom: 2px solid #ccc;
@@ -203,59 +163,48 @@ main {
 
 /* Quote styles */
 .quote {
-  background-color: #d8f3dc; /* Light green background color */
-  border-left: 4px solid #2a9d8f; /* Darker green left border color */
-  padding: 20px; /* Padding around the quote */
-  margin-bottom: 20px; /* Bottom margin */
+  background-color: #d8f3dc;
+  border-left: 4px solid #2a9d8f;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .quote p {
-  margin-bottom: 10px; /* Bottom margin for paragraphs within the quote */
+  margin-bottom: 10px;
 }
 
 .quoted {
-  font-style: italic; /* Italicize the quoted text */
-  color: #264653; /* Dark green color for the quoted text */
+  font-style: italic;
+  color: #264653;
 }
 
-/* MEDIA QUERY */
-
+/* Media query */
 @media only screen and (min-width: 45em) {
   main {
-    border-bottom: none; /* Correct media query to remove border-bottom */
+    border-bottom: none;
   }
 }
 
+/* Subtitle and byline styles */
 .subtitle {
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-family: 'Helvetica', sans-serif;
   font-size: 20px;
-  font-weight: normal; /* Use font-weight instead of font shorthand */
-}
-
-figure {
-  margin: 0 0 1em;
-}
-
-figcaption {
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
-  font-size: 14px;
-  font-weight: normal; /* Use font-weight instead of font shorthand */
+  font-weight: normal;
 }
 
 .byline {
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-family: 'Helvetica', sans-serif;
   font-size: 18px;
-  font-weight: normal; /* Use font-weight instead of font shorthand */
+  font-weight: normal;
   text-transform: uppercase;
   color: #666;
   margin: 2em 0;
 }
 
-/* OTHER LINKS */
-
+/* Other links and articles */
 .other {
   font-size: 16px;
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-family: 'Helvetica', sans-serif;
 }
 
 .other article {
@@ -281,10 +230,9 @@ figcaption {
   margin-bottom: 5px;
 }
 
-/* FOOTER */
-
+/* Footer styles */
 footer {
-  font-family: 'Helvetica', sans-serif; /* Adjust font */
+  font-family: 'Helvetica', sans-serif;
   font-size: 16px;
   background-color: #222;
   color: #fff;
@@ -292,7 +240,7 @@ footer {
   line-height: 1.2;
 }
 
-address {
+.address {
   font-style: normal;
 }
 
