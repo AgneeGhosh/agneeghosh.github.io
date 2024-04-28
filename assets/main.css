@@ -1,17 +1,12 @@
-/* Reset and basic styles */
 html,
 body {
-  font-family: 'Arial', sans-serif; /* Changed font family for better readability */
-  font-size: 18px; /* Slightly reduced font size for better readability */
-  line-height: 1.6; /* Increased line height for better readability */
-  margin: 0;
-  padding: 0;
+  font: normal 20px 'Georgia', serif;
+  line-height: 1.3;
 }
 
 h1 {
-  font-size: 2.8em; /* Slightly increased font size for emphasis */
-  line-height: 1.2; /* Adjusted line height for better spacing */
-  margin: 0.5em 0 0.8em; /* Adjusted top margin for better spacing */
+  line-height: 1.1;
+  margin: 0.5em 0 0;
 }
 
 h2,
@@ -19,9 +14,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.8em; /* Slightly increased font size for hierarchy */
-  line-height: 1.3; /* Adjusted line height for better spacing */
-  margin: 0.8em 0; /* Adjusted margin for better spacing */
+  line-height: 1.1;
+  margin: 0;
 }
 
 /* Link styles */
