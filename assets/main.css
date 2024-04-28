@@ -158,7 +158,9 @@ nav a:hover {
   padding: 20px;
   margin: 20px 0; /* Add margin to separate from surrounding content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  font-family: 'Georgia Bold Italic', serif; /* Georgia Bold Italic */
+  font-family: 'Georgia', serif; /* Georgia font */
+  font-style: italic; /* Italicize */
+  font-weight: bold; /* Bold */
   font-size: 20px; /* Larger font for emphasis */
   line-height: 1.6; /* Improved line spacing for readability */
   color: #333333; /* Dark text color */
