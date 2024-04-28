@@ -1,20 +1,21 @@
 html, body {
-  font: normal 20px/1.3 'Georgia', serif; /* Ensures Georgia is used throughout */
-  background-color: #e8f5e9; /* Pale green background for the entire webpage */
+  font: normal 20px/1.3 'Georgia', serif; /* Maintains a clean, readable typeface */
+  background-color: #e8f5e9; /* Soft green, evoking a fresh, light feel */
+  color: #333; /* Darker text for better readability */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.5em 0 0; /* Simplified margin settings */
-  font-family: 'Georgia', serif; /* Consistency in typography */
+  margin: 0.5em 0 0; /* Reduces the default margin */
+  font-family: 'Georgia', serif; /* Keeps typography consistent */
 }
 
 /* Link styles */
 a {
-  color: #26a69a; /* Changed to a green hue to fit the new color scheme */
-  text-decoration: none;
+  color: #2e8b57; /* A deeper green, staying within the theme */
+  text-decoration: none; /* Keeps links clean */
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Adds a subtle interaction cue */
 }
 
 /* Image styles */
@@ -22,12 +23,12 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1.5em; /* Ensures images are centered and spaced */
 }
 
 .float-left {
   float: left;
-  margin-right: 1.5em;
+  margin-right: 1.5em; /* Spacing for text wrapping around images */
 }
 
 .float-right {
@@ -36,13 +37,14 @@ img {
 }
 
 figure, figcaption {
-  margin: 0 0 1em;
-  font-size: 14px;
+  margin: 0 0 1em; /* Reduces space around images and captions for a tighter layout */
+  font-size: 14px; /* Smaller font for captions */
   font-weight: normal;
+  text-align: center; /* Centers the caption text */
 }
 
 figcaption {
-  font-family: 'Helvetica', sans-serif; /* Ensuring Helvetica is used for sans-serif */
+  font-family: 'Helvetica', sans-serif; /* Modern, sans-serif font for captions */
 }
 
 .aspect-ratio-box, .aspect-ratio-box img {
@@ -63,15 +65,15 @@ figcaption {
 /* Header styles */
 .site-header {
   text-align: center;
-  margin: 0;
   padding: 1em 0;
-  font-family: 'Helvetica', sans-serif; /* Helvetica for sans-serif consistency */
+  font-family: 'Helvetica', sans-serif;
   text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff; /* Ensuring a clean, white background for the header */
+  background-color: #ffffff; /* Clean white background for clarity */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
   z-index: 1000;
 }
 
@@ -90,38 +92,37 @@ figcaption {
 
 .additional-text {
   font-style: italic;
-  color: #6c757d;
+  color: #6c757d; /* Subdued tone for additional text */
 }
 
 .author-name {
-  font-weight: bold;
-  font-family: 'Georgia', serif; /* Ensures consistency in typography */
+  font-weight: bold; /* Emphasis on the author's name */
 }
 
 .breadcrumb, .quote {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style-type: none; /* Removes default list styling */
 }
 
 .quote {
-  background-color: #e0f2f1; /* Light green background */
-  border-left: 4px solid #26a69a; /* Darker green border */
+  background-color: #f0fff0; /* Very light green for an airy, minimalistic feel */
+  border-left: 4px solid #8fbc8f; /* Muted green border */
   padding: 20px;
   margin-bottom: 20px;
 }
 
 .quote p {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Consistent spacing within quotes */
 }
 
 .quoted {
   font-style: italic;
-  color: #4caf50; /* Bright green color for quoted text */
+  color: #66cdaa; /* Soft, floral green for quoted text */
 }
 
 .subtitle, .byline, .other {
-  font-family: 'Helvetica', sans-serif; /* Helvetica for sans-serif consistency */
+  font-family: 'Helvetica', sans-serif;
 }
 
 .byline {
@@ -131,15 +132,14 @@ figcaption {
 }
 
 footer {
-  background-color: #bfd6b6; /* Consistent light green accent for footer */
+  background-color: #fafafa; /* Lighter background for footer */
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  font-family: 'Helvetica', sans-serif; /* Helvetica for sans-serif consistency */
 }
 
 footer a {
-  color: #007bff; /* Maintaining the blue color for links */
+  color: #2e8b57; /* Ensures links blend with the theme */
   text-decoration: none;
 }
 
