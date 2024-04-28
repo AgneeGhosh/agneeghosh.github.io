@@ -200,8 +200,9 @@ footer {
 }
 
 .social-icons img {
-  width: 24px;
-  height: auto;
+  width: 24px; /* Adjust width and height as needed */
+  height: 24px;
+  margin-right: 10px; /* Add spacing between icons */
 }
 
 .footer-bottom {
