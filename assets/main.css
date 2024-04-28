@@ -72,86 +72,83 @@ figcaption {
 }
 
 /* Additional CSS to ensure the header does not overlap the content */
+/* Site Header Improvements */
 .site-header {
-  background-color: #d4f3cf; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: fixed; /* Assuming you want a fixed header */
-  width: 100%; /* Make the header full width */
+  background-color: #F9F9F9; /* Light grey background for subtle contrast */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
+  padding: 15px 20px; /* Increase padding for more space */
+  position: fixed; /* Keep header at top */
+  width: 100%; /* Full width */
   top: 0;
-  left: 0;
-  z-index: 1000; /* Ensure the header is above other content */
+  z-index: 1000; /* Above other content */
 }
 
-.site-header a {
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherits color from parent */
-}
-
+/* Logo Adjustments */
 .site-header img {
-  height: 80px; /* Adjust to match inspiration */
-  margin-left: 20px; /* Add margin to position the logo on the left */
+  height: auto; /* Maintain aspect ratio */
+  width: 120px; /* Set a width that maintains logo clarity */
 }
 
+/* Navigation Improvements */
 nav ul {
-  font-size: 1rem; /* Adjust to match inspiration */
-  font-weight: 400; /* Adjust to match inspiration */
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  gap: 20px;
-  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Align links with logo */
 }
 
 nav ul li {
-  padding: 10px;
+  margin: 0 10px; /* Add horizontal space between nav items */
 }
 
 nav a {
-  text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600; /* Slightly bolder font */
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #000;
+  color: #007BFF; /* A bright color for hover state */
 }
 
-@media screen and (max-width: 768px) {
-  .site-header {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the start */
-  }
-
-  nav ul {
-    flex-direction: column; /* Stack nav items vertically */
-    align-items: flex-end; /* Align items to the right */
-  }
-
-  nav ul li {
-    padding: 5px; /* Reduce padding for smaller screens */
-  }
-}
-
+/* CTA Button Enhancements */
 .site-header .cta-button {
-  padding: 10px 20px;
-  background-color: #000; /* Assuming a black button */
-  color: #fff;
-  text-transform: uppercase;
+  padding: 10px 25px;
+  background-color: #007BFF; /* Eye-catching button color */
+  color: #FFFFFF;
+  font-size: 1rem; /* Standard readable size */
+  border-radius: 25px; /* Rounded edges */
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease;
 }
 
 .site-header .cta-button:hover {
-  background-color: #333; /* Darken button on hover */
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Larger shadow on hover */
+}
+
+/* Responsive Design Improvements */
+@media screen and (max-width: 768px) {
+  .site-header {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .site-header img {
+    margin-bottom: 10px; /* Space between logo and nav on small screens */
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px; /* Space between nav and the CTA button */
+  }
+
+  nav ul li {
+    margin: 5px; /* Less margin on smaller screens */
+  }
 }
 
 .additional-text {
