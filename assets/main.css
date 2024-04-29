@@ -236,69 +236,60 @@ nav a {
   }
 }
 
-/* Footer */
 footer {
-  margin-top: auto; /* Push footer to the bottom */
-  background-image: url('footer-background.jpg');
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent background image from repeating */
-  padding: 1rem 0; /* Decrease padding for better spacing */
-  color: #FFFFFF; /* Set text color to white */
-  text-align: center; /* Center align all text within the footer */
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-/* Footer Content */
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow content to wrap */
+  padding: 0 10%;
 }
 
-/* Footer Sections */
-.footer-section h2, .footer-section p {
-  color: #FFFFFF; /* Ensuring all text in footer sections is white */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.resume-button {
-  padding: 12px 24px; /* Increase padding */
-  font-size: 0.8em; /* Decrease font size for smaller screens */
-  background-color: #94ae95; /* Green color */
-  color: #FFFFFF; /* White text color */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Add border radius for a rounded button */
+.footer-logo {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.resume-button:hover {
-  background-color: #388E3C; /* Darker green on hover */
+.footer-section h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
 }
 
 .contact-title {
-  font-size: 0.9em; /* Decrease font size for smaller screens */
+  font-weight: bold;
 }
 
-/* Social Icons */
-.social-icons a {
-  margin: 0 6px; /* Decrease margin between icons for smaller screens */
-}
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
 
-.social-icons img {
-  width: 24px; /* Decrease icon size for smaller screens */
-  height: 24px;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  margin-top: 0.25rem; /* Decrease top margin for smaller screens */
-  border-top: 1px solid #FFFFFF; /* White border to visually separate from main content */
-  padding-top: 0.25rem; /* Decrease top padding for smaller screens */
-}
-
-@media screen and (max-width: 768px) {
-  /* Smaller font size and padding adjustments in the footer */
-  .resume-button {
-    font-size: 0.75em; /* Decrease font size for smaller screens */
+  .footer-section {
+    margin-bottom: 20px;
   }
 }
