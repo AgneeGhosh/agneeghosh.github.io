@@ -235,11 +235,35 @@ nav a {
   }
 }
 
+/* Footer */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: beige;
+  color: #333333;
   padding: 2rem 0;
   font-family: 'Georgia', 'Helvetica', sans-serif;
+}
+
+.footer-contact {
+  margin-bottom: 1rem; /* Adjust margin as needed */
+}
+
+.footer-contact p {
+  margin: 0; /* Remove default margin */
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.footer-contact strong {
+  color: #000; /* Set the color of "Say Hi" to black */
+}
+
+.footer-link {
+  color: #000; /* Set link color to black */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold; /* Make the link bold */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 .footer-container {
