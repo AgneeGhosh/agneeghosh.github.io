@@ -85,7 +85,7 @@ figcaption {
   padding: 15px; /* Decrease padding for smaller screens */
   position: fixed; /* Keep header at top */
   width: 100%; /* Full width */
-  top: 0;
+  top: 0; /* Initially position at the top */
   z-index: 1000; /* Above other content */
   display: flex; /* Establish flex container */
   flex-direction: column; /* Stack elements vertically */
@@ -130,18 +130,6 @@ nav a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .centered-content {
-    margin-top: 60px; /* Adjust top margin for smaller screens */
-  }
-
-  header h1, header .subtitle {
-    font-size: 1.6em; /* Decrease font size for smaller screens */
-  }
-
-  h2, h3, h4, h5, h6 {
-    font-size: 1.3em; /* Decrease font size for smaller screens */
-  }
-
   .site-header {
     padding: 10px; /* Decrease padding for smaller screens */
   }
@@ -241,7 +229,7 @@ nav a:hover {
 /* Footer */
 footer {
   margin-top: auto; /* Push footer to the bottom */
-  background-image: url(./footer-background.jpg); /* Use background image */
+  background-image: url('footer-background.jpg');
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
   background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
