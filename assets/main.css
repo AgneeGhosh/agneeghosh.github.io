@@ -144,6 +144,16 @@ nav a:hover {
   color: #6c757d; /* Grayish text color */
 }
 
+/* Byline */
+.byline {
+  font-size: 1.2em; /* Increase font size */
+  font-style: italic; /* Italicize */
+  font-weight: bold; /* Make it bold */
+  text-align: center; /* Center align */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  color: #FFFFFF; /* White text color */
+}
+
 .author-name {
   font-weight: bold;
 }
@@ -185,9 +195,6 @@ nav a:hover {
 footer {
   margin-top: auto; /* Push footer to the bottom */
   background-color: #333333; /* Dark background */
-  color: #FFFFFF; /* Light text color */
-  font-family: 'Georgia', 'Helvetica', sans-serif, 'Arial', sans-serif; /* Complementary font family */
-  font-weight: bold; /* Make the font weight bold */
   padding: 2rem 0; /* Increase padding for better spacing */
   background-image: url('Footer-background.jpg'); /* Relative path */
   background-size: cover; /* Cover the entire background */
@@ -195,6 +202,7 @@ footer {
   background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
+/* Footer Content */
 .footer-content {
   display: flex;
   justify-content: space-around;
@@ -202,6 +210,14 @@ footer {
   flex-wrap: wrap; /* Allow content to wrap */
 }
 
+/* Footer Text */
+.footer-text {
+  color: #FFFFFF; /* White text color */
+  font-weight: bold; /* Make it bold */
+  text-align: center; /* Center align */
+}
+
+/* Social Icons */
 .social-icons {
   margin-top: 1rem;
 }
@@ -216,21 +232,10 @@ footer {
   height: 32px;
 }
 
+/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 1rem;
   border-top: 1px solid #FFFFFF; /* White border */
   padding-top: 1rem;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%; /* Ensure the links use full width of the footer */
-  gap: 20px; /* Increase gap between links */
-}
-
-.contact-links img {
-  height: 40px; /* Increase icon size */
 }
