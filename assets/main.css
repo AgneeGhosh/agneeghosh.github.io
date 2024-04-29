@@ -225,13 +225,13 @@ nav a {
 }
 
 footer {
-  background-color: #000; /* Set the footer background to black */
-  color: #FFF; /* Set text color to white for contrast */
-  padding: 20px; /* Increase padding to make the footer bigger */
-  font-family: 'Georgia', sans-serif; /* Keep consistent font family */
+  background-color: #000;
+  color: #FFF;
+  padding: 10px; /* Decreased padding */
+  font-family: 'Georgia', sans-serif;
   text-align: center;
-  border-top: 1px solid #444; /* Light grey border for subtle separation */
-  width: 100%; /* Ensure the footer extends full width of the viewport */
+  border-top: 1px solid #444;
+  width: 100%;
 }
 
 .footer-container {
@@ -239,52 +239,42 @@ footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto; /* Centering the footer content */
-  width: 100%; /* Ensure it takes the full width */
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer-contact p {
   margin: 5px 0;
-  font-size: 1.4em; /* Increase font size to make the text more prominent */
+  font-size: 1.2em; /* Decreased font size */
 }
 
 .footer-link {
-  color: #FFF; /* Maintain white color for visibility */
-  text-decoration: underline; /* Keep underlined for clarity */
+  color: #FFF;
+  text-decoration: underline;
   font-weight: bold;
-  font-size: 1.4em; /* Increase font size for better visibility */
+  font-size: 1.2em; /* Decreased font size */
 }
 
 .footer-socials {
   display: flex;
-  gap: 10px; /* Maintain gap for spacing */
+  gap: 10px;
 }
 
 .footer-socials a {
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* Center the content within the link */
+  justify-content: center;
 }
 
 .footer-socials img {
-  width: 24px; /* Standard size for icons */
+  width: 24px;
   height: auto;
 }
 
 .footer-bottom-text {
-  font-size: 1.2em; /* Increase font size for better readability */
-  color: #AAA; /* Maintain lighter grey for subtlety */
-  margin-top: 20px; /* Increase margin for better separation */
+  font-size: 1em; /* Decreased font size */
+  color: #AAA;
+  margin-top: 10px; /* Decreased margin */
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    text-align: center; /* Ensure text is centered */
-  }
-
-  .footer-logo, .footer-links, .footer-socials {
-    margin-bottom: 20px; /* Increase bottom margin for better spacing */
-  }
-}
 
