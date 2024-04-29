@@ -146,16 +146,19 @@ nav a:hover {
 
 /* Byline */
 .byline {
-  font-size: 1.2em; /* Increase font size */
-  font-style: italic; /* Italicize */
-  font-weight: bold; /* Make it bold */
-  text-align: center; /* Center align */
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
-  color: #FFFFFF; /* White text color */
+  font-size: 1.2em; /* Slightly larger font size */
+  font-style: italic; /* Maintain italic style */
+  font-weight: bold; /* Keep bold for emphasis */
+  text-align: center; /* Center align text */
+  margin-bottom: 20px; /* Maintain bottom margin */
+  color: #333333; /* Darker text color for better contrast */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* White shadow to soften text edge */
 }
 
 .author-name {
-  font-weight: bold;
+  color: #388E3C; /* Dark green color, similar to the hover state of links */
+  font-family: 'Pacifico', cursive; /* Use a common cursive font like Pacifico if available, otherwise choose another cursive font */
+  font-weight: normal; /* Adjust weight to suit the cursive style */
 }
 
 .breadcrumb, .quote {
@@ -194,12 +197,13 @@ nav a:hover {
 /* Footer */
 footer {
   margin-top: auto; /* Push footer to the bottom */
-  background-color: #333333; /* Dark background */
-  padding: 2rem 0; /* Increase padding for better spacing */
-  background-image: url('Footer-background.jpg'); /* Relative path */
+  background-image: url('https://unsplash.com/photos/green-leaf-s9vNTRLoWl8'); /* Update URL for direct background image use */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
   background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image from repeating */
+  padding: 2rem 0; /* Increase padding for better spacing */
+  color: #E0E0E0; /* Soft white color for text */
 }
 
 /* Footer Content */
@@ -212,7 +216,7 @@ footer {
 
 /* Footer Text */
 .footer-text {
-  color: #FFFFFF; /* White text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); /* Black shadow to make text stand out */
   font-weight: bold; /* Make it bold */
   text-align: center; /* Center align */
 }
