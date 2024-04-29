@@ -237,45 +237,46 @@ nav a {
 
 /* Footer */
 footer {
-  background-color: beige;
-  color: #333333;
+  background-color: #F3EAD8; /* Light beige to complement the existing color scheme */
+  color: #333333; /* Dark gray text for good contrast and readability */
   padding: 2rem 0;
-  font-family: 'Georgia', 'Helvetica', sans-serif;
+  font-family: 'Georgia', serif; /* Elegant, readable typeface */
+  border-top: 2px solid #C8A165; /* Thin golden line to add a classy separation */
 }
 
 .footer-contact {
-  margin-bottom: 1rem; /* Adjust margin as needed */
+  margin-bottom: 1rem; /* Space between contact info and links */
 }
 
 .footer-contact p {
-  margin: 0; /* Remove default margin */
-  line-height: 1.5; /* Adjust line height for better readability */
+  margin: 0; /* Remove default margins */
+  line-height: 1.5; /* Improve line spacing for readability */
 }
 
 .footer-contact strong {
-  color: #000; /* Set the color of "Say Hi" to black */
+  color: #000; /* Emphasize "Say Hi" with black color */
 }
 
 .footer-link {
-  color: #000; /* Set link color to black */
+  color: #6F4E37; /* Dark brown color for links to match the classy theme */
   text-decoration: none; /* Remove default underline */
-  font-weight: bold; /* Make the link bold */
+  font-weight: bold; /* Bold font for emphasis */
 }
 
 .footer-link:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; /* Add underline on hover for better user interaction */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
+  justify-content: space-between; /* Distribute space evenly between elements */
+  align-items: center; /* Vertically align items in the footer */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  text-align: center; /* Center align the text */
 }
 
 .footer-logo img {
-  max-width: 150px; /* Adjust to your logo size */
+  max-width: 150px; /* Restrict logo size */
 }
 
 .footer-links {
@@ -284,40 +285,35 @@ footer {
   margin: 1rem 0;
 }
 
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-  margin: 0.5rem 0;
-}
-
 .footer-socials {
-  order: 2; /* Ensures it is to the right */
+  order: 2; /* Position socials to the right */
   display: flex;
-  flex-direction: column; /* Stacks the links vertically */
-  align-items: flex-end; /* Aligns links to the right */
+  flex-direction: row; /* Align social links horizontally */
+  align-items: center; /* Center alignment of the icons */
 }
 
 .footer-socials a {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 1rem; /* Spacing between icons */
 }
 
 .footer-socials img {
-  width: 30px; /* Adjust to match the size of the social icons */
+  width: 24px; /* Make icons slightly smaller for a more refined look */
 }
 
 .footer-bottom-text {
   margin-top: 1rem;
   font-size: 0.8rem;
-  text-align: center;
+  text-align: center; /* Center text for uniformity */
 }
 
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+    align-items: center; /* Align items centrally on small screens */
   }
 
   .footer-logo, .footer-links, .footer-socials {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Add bottom margin for better spacing on small screens */
   }
 }
