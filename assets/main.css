@@ -216,7 +216,7 @@ footer {
 
 /* Footer Text */
 .footer-text {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); /* Black shadow to make text stand out */
+  text-shadow: 1px 1px 2px rgba(255, 254, 254, 0.9); /* Black shadow to make text stand out */
   font-weight: bold; /* Make it bold */
   text-align: center; /* Center align */
 }
