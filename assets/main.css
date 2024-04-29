@@ -53,12 +53,12 @@ img {
 /* Floats */
 .float-left {
   float: left;
-  margin-right: 24px;
+  margin-right: 24px; /* Updated margin with px */
 }
 
 .float-right {
   float: right;
-  margin-left: 24px;
+  margin-left: 24px; /* Updated margin with px */
 }
 
 /* Figures */
@@ -76,80 +76,89 @@ figcaption {
 /* Header */
 .site-header {
   background-color: #c0d4c0; /* Dark green background */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
+  text-align: center; /* Center elements */
+  padding: 20px; /* Increase padding for more space */
+  position: fixed; /* Keep header at top */
+  width: 100%; /* Full width */
   top: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
+  z-index: 1000; /* Above other content */
+  display: flex; /* Establish flex container */
+  flex-direction: column; /* Stack elements vertically */
+  font-family: 'Georgia', 'Helvetica', sans-serif; /* Use Georgia as primary font and fallback to Helvetica */
+  font-size: 1.2em; /* Set text size to 1.2em for consistency */
 }
 
 /* Header Logo */
 .site-header img {
-  height: auto;
-  width: 140px;
-  margin-bottom: 10px;
+  height: auto; /* Maintain aspect ratio */
+  width: 140px; /* Set a width that maintains logo clarity */
+  margin-bottom: 10px; /* Space between logo and navigation */
 }
 
 /* Navigation */
 nav {
-  width: 100%;
-  justify-content: center;
+  width: 100%; /* Full width to center on the page */
+}
+
+nav ul {
+  justify-content: center; /* Center nav items */
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 nav ul li {
-  padding: 10px;
+  padding: 10px; /* More padding for clickability */
 }
 
 nav a {
-  color: #333333;
-  font-weight: 600;
+  color: #333333; /* Dark text color */
+  font-weight: 600; /* Slightly bolder font */
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #1B5E20;
+  color: #1B5E20; /* Dark green on hover */
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .site-header, nav ul {
+  .site-header {
     padding: 10px;
-    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically on small screens */
   }
 
   nav ul li {
-    margin: 5px;
+    margin: 5px; /* Less margin on smaller screens */
   }
 }
 
 /* Additional Styles */
 .additional-text {
   font-style: italic;
-  color: #6c757d;
+  color: #6c757d; /* Grayish text color */
 }
 
 /* Byline */
 .byline {
-  font-size: 1.2em;
-  font-style: italic;
-  font-weight:bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333333;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  font-size: 1.2em; /* Slightly larger font size */
+  font-style: italic; /* Maintain italic style */
+  font-weight: bold; /* Keep bold for emphasis */
+  text-align: center; /* Center align text */
+  margin-bottom: 20px; /* Maintain bottom margin */
+  color: #333333; /* Darker text color for better contrast */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* White shadow to soften text edge */
 }
 
 .author-name {
-  color: #388E3C;
-  font-family: 'Pacifico', cursive;
+  color: #388E3C; /* Dark green color, similar to the hover state of links */
+  font-family: 'Pacifico', cursive; /* Use a common cursive font like Pacifico if available, otherwise choose another cursive font */
+  font-weight: normal; /* Adjust weight to suit the cursive style */
 }
 
 .breadcrumb, .quote {
@@ -160,40 +169,41 @@ nav a:hover {
 
 /* Quote */
 .quote {
-  background-color: #f9f9f9;
-  border-left: 5px solid #4CAF50;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Georgia', serif;
-  font-style: italic;
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #333333;
-  position: relative;
+  background-color: #f9f9f9; /* Light gray background */
+  border-left: 5px solid #4CAF50; /* Dark green border */
+  padding: 20px; /* Increase padding for better spacing */
+  margin: 20px 0; /* Add margin to separate from surrounding content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Georgia', serif; /* Georgia font */
+  font-style: italic; /* Italicize */
+  font-weight: normal; /* Normal weight */
+  font-size: 1.1em; /* Set font size of quote */
+  line-height: 1.6; /* Improved line spacing for readability */
+  color: #333333; /* Dark text color */
+  position: relative; /* Positioning for the quote */
 }
 
 /* Quotation Mark */
 .quote:before {
-  content: '\201C';
-  font-size: 3em;
-  color: #4CAF50;
-  position:absolute;
-  top: 10px;
-  left: -30px;
-  line-height: 0;
+  content: '\201C'; /* Left double quotation mark */
+  font-size: 3em; /* Adjust size as needed */
+  color: #4CAF50; /* Dark green color */
+  position: absolute; /* Position the quotation mark */
+  top: 10px; /* Adjust vertical position */
+  left: -30px; /* Adjust horizontal position */
+  line-height: 0; /* Prevents line height from affecting the vertical position */
 }
 
 /* Footer */
 footer {
-  margin-top: auto;
-  background-image: url('./Footer-background.jpg');
-  background-color: rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem 0;
-  color: #FFFFFF;
+  margin-top: auto; /* Push footer to the bottom */
+  background-image: url('./Footer-background.jpg'); /* Use background image */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  padding: 2rem 0; /* Increase padding for better spacing */
+  color: #FFFFFF; /* Change text color to white */
 }
 
 /* Footer Content */
@@ -201,11 +211,12 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow content to wrap */
 }
 
 .resume-button {
-  background-color: #499a4c;
+  display: inline-block;
+  background-color: #499a4c; /* Dark green, matching other link colors */
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -216,14 +227,14 @@ footer {
 }
 
 .resume-button:hover {
-  background-color: #388E3C;
+  background-color: #388E3C; /* Darker green on hover */
 }
 
 /* Footer Text */
 .footer-text {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-  font-weight: bold;
-  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); /* Black shadow to make text stand out */
+  font-weight: bold; /* Make it bold */
+  text-align: center; /* Center align */
 }
 
 /* Social Icons */
@@ -233,11 +244,11 @@ footer {
 
 .social-icons a {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 1rem; /* Increase margin */
 }
 
 .social-icons img {
-  width: 32px;
+  width: 32px; /* Increase icon size */
   height: 32px;
 }
 
@@ -245,6 +256,6 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 1rem;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF; /* White border */
   padding-top: 1rem;
 }
