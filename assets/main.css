@@ -222,83 +222,84 @@ nav a {
   }
 }
 
-/* Footer Styling */
 footer {
-  background-color: #F4F4F4; /* Light gray background for subtlety and modern look */
-  color: #333; /* Dark gray text for contrast */
-  padding: 20px 40px; /* Padding for space around content */
-  font-family: 'Arial', sans-serif; /* Modern, sans-serif font for clean look */
-  text-align: center; /* Center-align the text for minimalism */
-  border-top: 1px solid #DDD; /* Subtle top border */
+  background-color: #F4F4F4;
+  color: #333;
+  padding: 20px 40px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  border-top: 1px solid #DDD;
+  width: 100%; /* Ensures the footer extends full width of the viewport */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* Space content evenly */
-  align-items: center; /* Center-align vertically */
-  max-width: 1200px; /* Max width of the footer content */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto; /* Centering the footer content */
+  width: 100%; /* Ensure it takes the full width */
 }
 
 .footer-logo img {
-  width: 100px; /* Logo size */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px;
+  height: auto;
 }
 
 .footer-links {
   display: flex;
-  flex-direction: column; /* Stack vertically */
+  flex-direction: column;
 }
 
 .footer-contact p {
-  margin: 5px 0; /* Reduce margin for compact look */
-  font-size: 0.9em; /* Slightly smaller font size for subtlety */
+  margin: 5px 0;
+  font-size: 0.9em;
 }
 
 .footer-contact strong {
-  color: #000; /* Bold black text for emphasis */
+  color: #000;
 }
 
 .footer-link {
-  color: #333; /* Dark grey links */
-  text-decoration: none; /* No underline */
-  font-weight: bold; /* Bold font for links */
-  font-size: 0.9em; /* Consistent font size with contact info */
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 .footer-link:hover {
-  text-decoration: underline; /* Underline on hover for interaction */
+  text-decoration: underline;
 }
 
 .footer-socials {
-  display: flex; /* Flex display for horizontal layout */
-  gap: 10px; /* Gap between social icons */
+  display: flex;
+  gap: 10px;
 }
 
 .footer-socials a {
-  display: inline-flex; /* Inline-flex for aligning icons */
-  align-items: center; /* Center the icons */
-  justify-content: center; /* Center the content */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-socials img {
-  width: 24px; /* Size of social icons */
-  height: auto; /* Maintain aspect ratio */
+  width: 24px;
+  height: auto;
 }
 
 .footer-bottom-text {
-  font-size: 0.8em; /* Smaller font size for unobtrusive text */
-  color: #666; /* Lighter grey for less emphasis */
-  margin-top: 10px; /* Space above the copyright text */
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /* Stack elements vertically on small screens */
-    text-align: center; /* Center align text for consistency */
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-logo, .footer-links, .footer-socials {
-    margin-bottom: 10px; /* Add bottom margin for separation */
+    margin-bottom: 10px;
   }
 }
