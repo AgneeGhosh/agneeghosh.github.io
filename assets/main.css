@@ -8,42 +8,51 @@ html, body {
   font-size: 16px; /* Set body text size to 16px for better readability */
 }
 
-/* Layout */
+/* Layout adjustments */
 .centered-content {
   width: 100%;
   max-width: 960px;
-  margin: 80px auto 0; /* Adjust top margin for smaller screens */
+  margin: 80px auto 0; /* Top margin adjusted */
   padding: 20px;
   box-sizing: border-box;
 }
 
-/* Typography */
-header h1 {
-  margin: 0; /* Remove margin to reduce white space above */
+@media screen and (max-width: 768px) {
+  .centered-content {
+      padding: 10px; /* Reduced padding */
+      margin-top: 60px; /* Increased top margin to accommodate fixed header */
+  }
+}
+
+/* Responsive Typography */
+header h1, header .subtitle, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-size: calc(1rem + 1.5vw); /* Dynamic scaling based on viewport width */
 }
 
 header .subtitle {
-  text-align: center; /* Center align the text */
-  font-family: 'Cheltenham', serif; /* Cheltenham font */
-  font-size: 1.6em; /* Decrease font size for smaller screens */
-  margin-bottom: 10px; /* Adjust margin for smaller screens */
+  text-align: center;
+  font-family: 'Cheltenham', serif;
+  font-size: 1.6em; /* Adjusted for consistent scaling */
+  margin-bottom: 10px;
 }
 
 h2, h3, h4, h5, h6 {
-  margin: 1em 0 0; /* Adjust margin for better spacing */
+  margin: 1em 0 0;
   font-family: 'Georgia', serif;
-  color: #243407; /* Updated header color */
-  font-size: 1.4em; /* Decrease font size for smaller screens */
+  color: #243407; /* Consistent dark green */
+  font-size: 1.4em; /* Consistent scaling */
 }
 
 /* Links */
 a {
-  color: #4CAF50; /* Dark green color */
+  color: #4CAF50;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
-  color: #388E3C; /* Darker green on hover */
+  color: #388E3C;
 }
 
 /* Images */
@@ -51,18 +60,18 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1em; /* Adjust margin for smaller screens */
+  margin: 0 auto 1em;
 }
 
 /* Floats */
 .float-left {
-  float: none; /* Reset float for smaller screens */
-  margin-right: 0; /* Reset margin for smaller screens */
+  float: none;
+  margin-right: 0;
 }
 
 .float-right {
-  float: none; /* Reset float for smaller screens */
-  margin-left: 0; /* Reset margin for smaller screens */
+  float: none;
+  margin-left: 0;
 }
 
 /* Figures */
@@ -79,69 +88,70 @@ figcaption {
 
 /* Header */
 .site-header {
-  background-color: #c0d4c0; /* Dark green background */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduce shadow for smaller screens */
-  text-align: center; /* Center elements */
-  padding: 15px; /* Decrease padding for smaller screens */
-  position: fixed; /* Keep header at top */
-  width: 100%; /* Full width */
-  top: 0; /* Initially position at the top */
-  z-index: 1000; /* Above other content */
-  display: flex; /* Establish flex container */
-  flex-direction: column; /* Stack elements vertically */
-  font-family: 'Georgia', 'Helvetica', sans-serif; /* Use Georgia as primary font and fallback to Helvetica */
-  font-size: 1.2em; /* Set text size to 1.2em for consistency */
-  transition: top 0.3s; /* Add transition for smooth animation */
+  background-color: #c0d4c0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Georgia', 'Helvetica', sans-serif;
+  font-size: 1.2em;
+  transition: top 0.3s;
 }
 
 /* Header Logo */
 .site-header img {
-  height: auto; /* Maintain aspect ratio */
-  width: 120px; /* Decrease logo size for smaller screens */
-  margin-bottom: 5px; /* Decrease margin for smaller screens */
+  height: auto;
+  width: 120px;
+  margin-bottom: 5px;
 }
 
 /* Navigation */
 nav {
-  width: 100%; /* Full width to center on the page */
+  width: 100%;
 }
 
 nav ul {
-  justify-content: center; /* Center nav items */
+  justify-content: center;
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  padding: 8px; /* Decrease padding for smaller screens */
+  padding: 8px;
 }
 
 nav a {
-  color: #333333; /* Dark text color */
-  font-weight: 600; /* Slightly bolder font */
+  color: #333333;
+  font-weight: 600;
   transition: color 0.3s ease;
+  display: block; /* Make links block for better touch targets */
 }
 
 nav a:hover {
-  color: #1B5E20; /* Dark green on hover */
+  color: #1B5E20;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
-  .site-header {
-    padding: 10px; /* Decrease padding for smaller screens */
+  /* Adapt font sizes and padding for smaller devices */
+  header h1, .subtitle, h2, h3, h4, h5, h6 {
+    font-size: calc(100% + 0.5vw);
   }
 
-  nav ul li {
-    margin: 5px; /* Less margin on smaller screens */
-    padding: 5px; /* Decrease padding for smaller screens */
+  /* Increase touch area for navigation */
+  nav ul li, nav a {
+    padding: 10px;
   }
 
-  /* Hide header on scroll */
+  /* Static header on small screens */
   .site-header {
-    top: -60px; /* Hide header when scrolled */
+      position: static;
   }
 }
 
@@ -184,7 +194,7 @@ nav a:hover {
   color: #333333; /* Dark text color */
   font-style: italic; /* Italicize the text */
   position: relative; /* Position relative for the quotation marks */
-  font-family: cursive; /* Set font family to cursive */
+  font-family: 'Comic Neue', cursive, sans-serif;
 }
 
 /* Quotation Mark */
@@ -253,7 +263,7 @@ footer {
 }
 
 .resume-button {
-  padding: 8px 16px; /* Decrease padding for smaller screens */
+  padding: 12px 24px; /* Increase padding */
   font-size: 0.8em; /* Decrease font size for smaller screens */
   background-color: #94ae95; /* Green color */
   color: #FFFFFF; /* White text color */
@@ -284,4 +294,11 @@ footer {
   margin-top: 0.25rem; /* Decrease top margin for smaller screens */
   border-top: 1px solid #FFFFFF; /* White border to visually separate from main content */
   padding-top: 0.25rem; /* Decrease top padding for smaller screens */
+}
+
+@media screen and (max-width: 768px) {
+  /* Smaller font size and padding adjustments in the footer */
+  .resume-button {
+    font-size: 0.75em; /* Decrease font size for smaller screens */
+  }
 }
