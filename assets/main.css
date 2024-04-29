@@ -222,35 +222,35 @@ nav a:hover {
 .quote {
   padding: 20px; /* Increase padding for better visual appeal */
   margin: 20px 0; /* Add margin to separate from surrounding content */
-  font-size: 2em; /* Make the font size twice as big as the main body text */
+  font-size: 1.8em; /* Adjust font size for better readability */
   line-height: 1.6; /* Adjust line height for better spacing */
   background-color: #f9f9f9; /* Light gray background */
   color: #333333; /* Dark text color */
-  font-style: italic; /* Italicize the text */
+  font-style: normal; /* Normal style for better readability */
   position: relative; /* Position relative for the quotation marks */
-  font-family: 'Comic Neue', cursive, sans-serif;
+  font-family: 'Georgia', serif; /* Using Georgia for a smooth transition from cursive */
 }
 
 /* Quotation Mark */
 .quote:before,
 .quote:after {
-  content: '\201C'; /* Left double quotation mark */
-  font-size: 4em; /* Adjust size as needed */
-  color: #4CAF50; /* Green color */
+  content: '\201C'; /* Left double quotation mark for before and right for after */
+  font-size: 2em; /* Adjust size as needed, smaller than initial suggestion for better integration */
+  color: #4CAF50; /* Green color to add a thematic touch */
   position: absolute; /* Position absolute for proper placement */
 }
 
 .quote:before {
-  top: -30px; /* Adjust vertical position */
-  left: -20px; /* Adjust horizontal position for the left quotation mark */
+  top: -10px; /* Adjust vertical position */
+  left: -10px; /* Adjust horizontal position for the left quotation mark */
 }
 
 .quote:after {
-  bottom: -30px; /* Adjust vertical position */
-  right: -20px; /* Adjust horizontal position for the right quotation mark */
+  bottom: -10px; /* Adjust vertical position */
+  right: -10px; /* Adjust horizontal position for the right quotation mark */
 }
 
-/* Responsive Design */
+/* Responsive Design Adjustments for Quotes */
 @media screen and (max-width: 768px) {
   .quote {
     padding: 15px; /* Decrease padding for smaller screens */
@@ -259,14 +259,13 @@ nav a:hover {
     line-height: 1.5; /* Adjust line height for better spacing */
   }
 
-  /* Quotation Mark */
   .quote:before,
   .quote:after {
-    font-size: 3em; /* Decrease size for smaller screens */
-    top: -20px; /* Adjust vertical position */
-    left: -15px; /* Adjust horizontal position for the left quotation mark */
-    bottom: -20px; /* Adjust vertical position */
-    right: -15px; /* Adjust horizontal position for the right quotation mark */
+    font-size: 1.5em; /* Decrease size for smaller screens */
+    top: -5px; /* Adjust vertical position for mobile */
+    left: -5px; /* Adjust horizontal position for the left quotation mark on mobile */
+    bottom: -5px; /* Adjust vertical position for mobile */
+    right: -5px; /* Adjust horizontal position for the right quotation mark on mobile */
   }
 }
 
