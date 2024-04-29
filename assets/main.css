@@ -215,6 +215,17 @@ footer {
 }
 
 .resume-button {
+  background-color: #499a4c;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button {
   display: inline-block;
   background-color: #499a4c; /* Dark green, matching other link colors */
   color: white;
