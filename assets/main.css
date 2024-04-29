@@ -212,6 +212,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; /* Allow content to wrap */
+  padding: 20px 0; /* Add padding to top and bottom for better spacing */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
 }
 
 .resume-button {
@@ -219,11 +221,12 @@ footer {
   background-color: #499a4c; /* Dark green, matching other link colors */
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
   transition: background-color 0.3s ease;
+  font-size: 1em; /* Ensuring text is not too small or too big */
 }
 
 .resume-button:hover {
@@ -231,29 +234,33 @@ footer {
 }
 
 .contact-title {
-  font-size: 2em;  /* Larger font size for 'Contact' */
-  font-weight: bold;  /* Optional: Makes it bold */
+  font-size: 1.2em; /* Slightly larger than normal text for emphasis */
+  font-weight: bold; /* Ensure it stands out */
+  color: white; /* Ensure visibility against dark background */
+  padding: 0 0 10px; /* Extra padding below the title */
 }
 
 /* Footer Text */
 .footer-text {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); /* Black shadow to make text stand out */
-  font-weight: bold; /* Make it bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75); /* Adjusted shadow for better visibility */
+  font-weight: bold; /* Keep bold */
   text-align: center; /* Center align */
+  color: white; /* White color for all footer text */
 }
 
 /* Social Icons */
 .social-icons {
-  margin-top: 1rem;
+  display: flex;
+  justify-content: center; /* Center align social icons */
+  padding: 10px 0; /* Padding around icons */
 }
 
 .social-icons a {
-  display: inline-block;
-  margin-right: 1rem; /* Increase margin */
+  margin: 0 15px; /* Increase space between icons */
 }
 
 .social-icons img {
-  width: 32px; /* Increase icon size */
+  width: 32px; /* Keep icon size consistent */
   height: 32px;
 }
 
@@ -261,6 +268,7 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 1rem;
-  border-top: 1px solid #FFFFFF; /* White border */
-  padding-top: 1rem;
+  border-top: 1px solid #FFFFFF; /* White border to separate content */
+  padding: 10px 0; /* Padding for aesthetic spacing */
+  color: white; /* White text for consistency */
 }
