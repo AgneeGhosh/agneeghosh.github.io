@@ -73,9 +73,9 @@ figcaption {
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; /* Changed for aligning nav and menu icon */
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row; /* Changed for proper layout */
+  flex-direction: row;
 }
 
 /* Header Logo */
@@ -95,7 +95,7 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto; /* Align nav to the right */
+  margin-left: auto;
 }
 
 nav ul li {
@@ -109,6 +109,21 @@ nav a {
   display: block;
 }
 
+/* Menu Icon */
+.menu-icon {
+  display: none; /* Only visible on small screens */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-icon div {
+  background-color: black;
+  height: 2px;
+  margin: 3px 0;
+  width: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .site-header {
     padding: 10px;
@@ -116,6 +131,9 @@ nav a {
 
   .menu-icon {
     display: block;
+    position: absolute;
+    right: 10px; /* Positions the menu on the top right */
+    top: 10px;
   }
 
   nav ul {
@@ -132,25 +150,6 @@ nav a {
   nav.active ul {
     display: flex;
   }
-
-  .menu-icon {
-    display: flex; /* Show the menu icon on small screens */
-  }
-}
-
-/* Menu Icon */
-.menu-icon {
-  display: none; /* Only visible on small screens */
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.menu-icon div {
-  background-color: black;
-  height: 2px;
-  margin: 3px 0;
-  width: 30px;
 }
 
 /* Additional Styles */
@@ -193,7 +192,7 @@ nav a {
   font-style: italic; /* Italicize the text for emphasis */
   font-family: 'Georgia', serif; /* Keep the elegant serif style */
   border-left: 5px solid #4CAF50; /* Add a thematic left border */
-  position: relative; /* Position relative for the quotation marks */
+  position:relative; /* Position relative for the quotation marks */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
@@ -265,6 +264,13 @@ footer {
   color: #fff;
   text-decoration: none;
   margin: 0.5rem 0;
+}
+
+.footer-socials {
+  order: 2; /* Ensures it is to the right */
+  display: flex;
+  flex-direction: column; /* Stacks the links vertically */
+  align-items: flex-end; /* Aligns links to the right */
 }
 
 .footer-socials a {
