@@ -223,12 +223,12 @@ nav a {
 }
 
 footer {
-  background-color: #F4F4F4;
-  color: #333;
+  background-color: #000; /* Black background color */
+  color: #FFF; /* White text color for contrast */
   padding: 20px 40px;
   font-family: 'Arial', sans-serif;
   text-align: center;
-  border-top: 1px solid #DDD;
+  border-top: 1px solid #444; /* Slightly lighter border for subtle contrast */
   width: 100%; /* Ensures the footer extends full width of the viewport */
 }
 
@@ -241,34 +241,16 @@ footer {
   width: 100%; /* Ensure it takes the full width */
 }
 
-.footer-logo img {
-  width: 100px;
-  height: auto;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-contact p {
   margin: 5px 0;
-  font-size: 0.9em;
-}
-
-.footer-contact strong {
-  color: #000;
+  font-size: 1.2em; /* Increased font size for better visibility */
 }
 
 .footer-link {
-  color: #333;
-  text-decoration: none;
+  color: #FFF; /* White color links for better contrast */
+  text-decoration: underline; /* Underline by default */
   font-weight: bold;
-  font-size: 0.9em;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
+  font-size: 1.2em; /* Increased font size for better visibility */
 }
 
 .footer-socials {
@@ -288,8 +270,8 @@ footer {
 }
 
 .footer-bottom-text {
-  font-size: 0.8em;
-  color: #666;
+  font-size: 1em; /* Larger font size for better readability */
+  color: #AAA; /* Lighter grey for less emphasis */
   margin-top: 10px;
 }
 
@@ -303,3 +285,4 @@ footer {
     margin-bottom: 10px;
   }
 }
+
