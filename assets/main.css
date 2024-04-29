@@ -224,77 +224,70 @@ nav a {
   }
 }
 
-/* Footer styles */
+/* Minimalist Footer Styles */
 footer {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text color */
-  font-family: 'Arial', sans-serif; /* Fallback to Arial if primary font isn't available */
-  padding: 40px 0; /* Vertical padding */
-  font-size: 16px; /* Main text size */
-  line-height: 1.5; /* Line height for better readability */
+  background-color: #000; /* Black background for the footer */
+  color: #fff; /* White text color for contrast */
+  padding: 20px; /* Padding around the content */
+  font-family: 'Arial', sans-serif; /* Simple and modern font */
+  font-size: 16px; /* Base font size */
+  line-height: 1.6; /* Spacing between lines for readability */
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap; /* Allows for responsive wrapping of elements */
-  justify-content: space-between; /* Spaces out child elements */
-  align-items: center; /* Vertically aligns elements */
   max-width: 1200px;
-  margin: 0 auto; /* Centers the container */
-  padding: 0 20px; /* Padding on the sides */
+  margin: 0 auto; /* Centers the content in the footer */
+  display: flex;
+  flex-wrap: wrap; /* Responsive wrapping */
+  justify-content: space-between; /* Spaces out the elements */
+  align-items: center; /* Aligns items vertically */
 }
 
 .footer-logo img {
-  width: auto; /* Maintains image aspect ratio */
-  height: 60px; /* Sets the logo height */
-  margin-bottom: 20px; /* Space below the logo */
+  width: auto; /* Keeps image ratio */
+  height: 50px; /* Sets the height of the logo */
 }
 
 .footer-links {
   display: flex;
-  flex-direction: column; /* Stacks the links vertically */
-  margin-bottom: 20px; /* Space below the link section */
+  flex-direction: column; /* Stacks links vertically */
 }
 
-.footer-contact strong {
-  font-size: 18px; /* Slightly larger text for headings */
+.footer-contact p, .footer-bottom-text {
+  color: #ddd; /* Slightly dim text for less emphasis */
 }
 
-.footer-contact p, .footer-link {
-  color: #ccc; /* Light gray color for text */
+.footer-contact p {
+  margin: 5px 0; /* Spacing between text */
 }
 
 .footer-link {
-  text-decoration: none; /* No underline on links */
-  color: #55acee; /* Adjust color to match your theme */
-  margin-bottom: 5px; /* Space below each link */
+  color: #fff; /* White color for links for better visibility */
+  text-decoration: underline; /* Underline for linked text */
+  margin-bottom: 10px; /* Spacing below the link */
 }
 
 .footer-link:hover {
-  text-decoration: underline; /* Underline on hover */
+  color: #bbb; /* Change color on hover for visual feedback */
 }
 
 .footer-socials {
   display: flex;
-  justify-content: center; /* Centers social links */
-  margin-bottom: 20px; /* Space below the social links section */
+  justify-content: center; /* Center the social media icons */
 }
 
 .footer-socials a {
-  display: inline-block;
-  margin: 0 10px; /* Space around each social icon */
+  margin: 0 15px; /* Spacing around the icons */
 }
 
 .footer-socials img {
-  height: 40px; /* Larger height for social icons */
-  width: auto; /* Adjust width automatically to maintain aspect ratio */
+  height: 30px; /* A little bigger icon size */
+  width: auto; /* Maintain aspect ratio */
 }
 
 .footer-bottom-text {
   text-align: center;
-  font-size: 14px; /* Smaller font size for copyright text */
-  opacity: 0.5; /* Dim the copyright text for subtlety */
-  margin-top: 20px; /* Space above the bottom text */
-  border-top: 1px solid #333; /* Top border line */
-  padding-top: 20px; /* Space between border and text */
+  margin-top: 15px; /* Space above the copyright text */
+  font-size: 14px; /* Slightly smaller font size */
+  opacity: 0.6; /* Make the text slightly transparent */
 }
