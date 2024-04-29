@@ -203,7 +203,7 @@ footer {
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image from repeating */
   padding: 2rem 0; /* Increase padding for better spacing */
-  color: #FFFFFF; /* Change text color to white */
+  color: #FFFFFF; /* Set text color to white */
 }
 
 /* Footer Content */
@@ -212,17 +212,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap; /* Allow content to wrap */
-}
-
-.resume-button {
-  background-color: #499a4c;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
 }
 
 .resume-button {
