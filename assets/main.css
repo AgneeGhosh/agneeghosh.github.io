@@ -62,51 +62,38 @@ figcaption {
   font-family: 'Helvetica', sans-serif;
 }
 
-/* Header */
+/* Header Styling */
 .site-header {
-  background-color: #c0d4c0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  position: fixed; /* Fixed position to keep it on top */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  right: 0; /* Align to the right of the viewport */
+  background-color: #FFF; /* White background */
+  z-index: 1000; /* Ensure it is above other content */
+  text-align: center; /* Center align the content */
+  transition: top 0.3s; /* Smooth transition for hiding and showing */
 }
 
-/* Header Logo */
-.site-header img {
-  height: auto;
-  width: 120px;
-}
-
-/* Navigation */
-nav {
-  width: auto;
+.menu-icon {
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px; /* Padding for clickable area */
 }
 
 nav ul {
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
-nav ul li {
-  padding: 8px;
+nav li {
+  display: inline; /* Display links inline */
+  margin-right: 20px; /* Margin between links */
 }
 
 nav a {
-  color: #333333;
-  font-weight: 600;
-  transition: color 0.3s ease;
-  display: block;
+  text-decoration: none; /* No underline */
+  color: black; /* Black text color */
+  font-size: 16px; /* Font size for links */
 }
 
 /* Menu Icon */
