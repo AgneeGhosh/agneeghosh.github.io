@@ -151,8 +151,9 @@ nav a:hover {
     padding: 5px; /* Decrease padding for smaller screens */
   }
 
-  .site-header:hover {
-    top: -80px; /* Hide header on hover for smaller screens */
+  /* Hide header on scroll */
+  .site-header {
+    top: -60px; /* Hide header when scrolled */
   }
 }
 
@@ -240,7 +241,7 @@ nav a:hover {
 /* Footer */
 footer {
   margin-top: auto; /* Push footer to the bottom */
-  background-image: url('https://unsplash.com/photos/palm-leaves-jt6QxZwSOCQ'); /* Use background image */
+  background-image: url(./footer-background.jpg); /* Use background image */
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
   background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
