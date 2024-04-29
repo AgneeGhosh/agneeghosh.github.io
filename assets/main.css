@@ -224,57 +224,77 @@ nav a {
   }
 }
 
+/* Footer styles */
 footer {
-  background-color: #000;
-  color: #FFF;
-  padding: 10px; /* Decreased padding */
-  font-family: 'Georgia', sans-serif;
-  text-align: center;
-  border-top: 1px solid #444;
-  width: 100%;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  font-family: 'Arial', sans-serif; /* Fallback to Arial if primary font isn't available */
+  padding: 40px 0; /* Vertical padding */
+  font-size: 16px; /* Main text size */
+  line-height: 1.5; /* Line height for better readability */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap; /* Allows for responsive wrapping of elements */
+  justify-content: space-between; /* Spaces out child elements */
+  align-items: center; /* Vertically aligns elements */
   max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Padding on the sides */
 }
 
-.footer-contact p {
-  margin: 5px 0;
-  font-size: 1.2em; /* Decreased font size */
+.footer-logo img {
+  width: auto; /* Maintains image aspect ratio */
+  height: 60px; /* Sets the logo height */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Stacks the links vertically */
+  margin-bottom: 20px; /* Space below the link section */
+}
+
+.footer-contact strong {
+  font-size: 18px; /* Slightly larger text for headings */
+}
+
+.footer-contact p, .footer-link {
+  color: #ccc; /* Light gray color for text */
 }
 
 .footer-link {
-  color: #FFF;
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 1.2em; /* Decreased font size */
+  text-decoration: none; /* No underline on links */
+  color: #55acee; /* Adjust color to match your theme */
+  margin-bottom: 5px; /* Space below each link */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 .footer-socials {
   display: flex;
-  gap: 10px;
+  justify-content: center; /* Centers social links */
+  margin-bottom: 20px; /* Space below the social links section */
 }
 
 .footer-socials a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  margin: 0 10px; /* Space around each social icon */
 }
 
 .footer-socials img {
-  width: 24px;
-  height: auto;
+  height: 40px; /* Larger height for social icons */
+  width: auto; /* Adjust width automatically to maintain aspect ratio */
 }
 
 .footer-bottom-text {
-  font-size: 1em; /* Decreased font size */
-  color: #AAA;
-  margin-top: 10px; /* Decreased margin */
+  text-align: center;
+  font-size: 14px; /* Smaller font size for copyright text */
+  opacity: 0.5; /* Dim the copyright text for subtlety */
+  margin-top: 20px; /* Space above the bottom text */
+  border-top: 1px solid #333; /* Top border line */
+  padding-top: 20px; /* Space between border and text */
 }
-
-
