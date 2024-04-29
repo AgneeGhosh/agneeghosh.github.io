@@ -12,7 +12,7 @@ html, body {
 .centered-content {
   width: 100%;
   max-width: 960px;
-  margin: 160px auto 0; /* Add top margin to account for the header height */
+  margin: 80px auto 0; /* Adjust top margin for smaller screens */
   padding: 20px;
   box-sizing: border-box;
 }
@@ -21,15 +21,15 @@ html, body {
 header h1, header .subtitle {
   text-align: center; /* Center align the text */
   font-family: 'Cheltenham', serif; /* Cheltenham font */
-  font-size: 2em; /* Set font size of H1 and subtitle to 2em for consistency */
-  margin-bottom: 20px; /* Add margin below the elements */
+  font-size: 1.8em; /* Decrease font size for smaller screens */
+  margin-bottom: 15px; /* Adjust margin for smaller screens */
 }
 
 h2, h3, h4, h5, h6 {
   margin: 1em 0 0; /* Adjust margin for better spacing */
   font-family: 'Georgia', serif;
   color: #243407; /* Updated header color */
-  font-size: 1.5em; /* Set font size of headers to 1.5em for consistency */
+  font-size: 1.4em; /* Decrease font size for smaller screens */
 }
 
 /* Links */
@@ -47,18 +47,18 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1em; /* Adjust margin for smaller screens */
 }
 
 /* Floats */
 .float-left {
-  float: left;
-  margin-right: 24px; /* Updated margin with px */
+  float: none; /* Reset float for smaller screens */
+  margin-right: 0; /* Reset margin for smaller screens */
 }
 
 .float-right {
-  float: right;
-  margin-left: 24px; /* Updated margin with px */
+  float: none; /* Reset float for smaller screens */
+  margin-left: 0; /* Reset margin for smaller screens */
 }
 
 /* Figures */
@@ -76,9 +76,9 @@ figcaption {
 /* Header */
 .site-header {
   background-color: #c0d4c0; /* Dark green background */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly larger shadow for depth */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduce shadow for smaller screens */
   text-align: center; /* Center elements */
-  padding: 20px; /* Increase padding for more space */
+  padding: 15px; /* Decrease padding for smaller screens */
   position: fixed; /* Keep header at top */
   width: 100%; /* Full width */
   top: 0;
@@ -87,13 +87,14 @@ figcaption {
   flex-direction: column; /* Stack elements vertically */
   font-family: 'Georgia', 'Helvetica', sans-serif; /* Use Georgia as primary font and fallback to Helvetica */
   font-size: 1.2em; /* Set text size to 1.2em for consistency */
+  transition: top 0.3s; /* Add transition for smooth animation */
 }
 
 /* Header Logo */
 .site-header img {
   height: auto; /* Maintain aspect ratio */
-  width: 140px; /* Set a width that maintains logo clarity */
-  margin-bottom: 10px; /* Space between logo and navigation */
+  width: 120px; /* Decrease logo size for smaller screens */
+  margin-bottom: 5px; /* Decrease margin for smaller screens */
 }
 
 /* Navigation */
@@ -110,7 +111,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 10px; /* More padding for clickability */
+  padding: 8px; /* Decrease padding for smaller screens */
 }
 
 nav a {
@@ -125,16 +126,29 @@ nav a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .site-header {
-    padding: 10px;
+  .centered-content {
+    margin-top: 60px; /* Adjust top margin for smaller screens */
   }
 
-  nav ul {
-    flex-direction: column; /* Stack nav items vertically on small screens */
+  header h1, header .subtitle {
+    font-size: 1.6em; /* Decrease font size for smaller screens */
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 1.3em; /* Decrease font size for smaller screens */
+  }
+
+  .site-header {
+    padding: 10px; /* Decrease padding for smaller screens */
   }
 
   nav ul li {
     margin: 5px; /* Less margin on smaller screens */
+    padding: 5px; /* Decrease padding for smaller screens */
+  }
+
+  .site-header:hover {
+    top: -80px; /* Hide header on hover for smaller screens */
   }
 }
 
@@ -146,13 +160,13 @@ nav a:hover {
 
 /* Byline */
 .byline {
-  font-size: 1.2em; /* Slightly larger font size */
+  font-size: 1.1em; /* Slightly larger font size */
   font-style: italic; /* Maintain italic style */
   font-weight: bold; /* Keep bold for emphasis */
   text-align: center; /* Center align text */
-  margin-bottom: 20px; /* Maintain bottom margin */
+  margin-bottom: 15px; /* Maintain bottom margin */
   color: #333333; /* Darker text color for better contrast */
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* White shadow to soften text edge */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* White shadow to soften text edge */
 }
 
 .author-name {
@@ -169,29 +183,17 @@ nav a:hover {
 
 /* Quote */
 .quote {
-  background-color: #f9f9f9; /* Light gray background */
-  border-left: 5px solid #4CAF50; /* Dark green border */
-  padding: 20px; /* Increase padding for better spacing */
-  margin: 20px 0; /* Add margin to separate from surrounding content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  font-family: 'Georgia', serif; /* Georgia font */
-  font-style: italic; /* Italicize */
-  font-weight: normal; /* Normal weight */
-  font-size: 1.1em; /* Set font size of quote */
-  line-height: 1.6; /* Improved line spacing for readability */
-  color: #333333; /* Dark text color */
-  position: relative; /* Positioning for the quote */
+  padding: 15px; /* Decrease padding for smaller screens */
+  margin: 15px 0; /* Add margin to separate from surrounding content */
+  font-size: 1em; /* Decrease font size for smaller screens */
+  line-height: 1.5; /* Improved line spacing for readability */
 }
 
 /* Quotation Mark */
 .quote:before {
-  content: '\201C'; /* Left double quotation mark */
-  font-size: 3em; /* Adjust size as needed */
-  color: #4CAF50; /* Dark green color */
-  position: absolute; /* Position the quotation mark */
-  top: 10px; /* Adjust vertical position */
-  left: -30px; /* Adjust horizontal position */
-  line-height: 0; /* Prevents line height from affecting the vertical position */
+  font-size: 2em; /* Adjust size as needed */
+  top: 5px; /* Adjust vertical position */
+  left: -20px; /* Adjust horizontal position */
 }
 
 /* Footer */
@@ -202,7 +204,7 @@ footer {
   background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image from repeating */
-  padding: 2rem 0; /* Increase padding for better spacing */
+  padding: 1rem 0; /* Decrease padding for better spacing */
   color: #FFFFFF; /* Set text color to white */
   text-align: center; /* Center align all text within the footer */
 }
@@ -221,43 +223,27 @@ footer {
 }
 
 .resume-button {
-  display: inline-block;
-  background-color: #499a4c; /* Dark green, matching other link colors */
-  color: white;
-  text-decoration: none;
-  padding: 12px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-  background-color: #388E3C; /* Darker green on hover */
+  padding: 8px 16px; /* Decrease padding for smaller screens */
+  font-size: 0.8em; /* Decrease font size for smaller screens */
 }
 
 .contact-title {
-  font-size: 1.2em; /* Slightly larger than normal text for emphasis */
-  font-weight: bold;
+  font-size: 0.9em; /* Decrease font size for smaller screens */
 }
 
 /* Social Icons */
-.social-icons {
-  margin-top: 1rem;
-}
-
 .social-icons a {
-  margin: 0 10px; /* Space between icons */
+  margin: 0 6px; /* Decrease margin between icons for smaller screens */
 }
 
 .social-icons img {
-  width: 32px; /* Icon size */
-  height: 32px;
+  width: 24px; /* Decrease icon size for smaller screens */
+  height: 24px;
 }
 
 /* Footer Bottom */
 .footer-bottom {
-  margin-top: 1rem;
+  margin-top: 0.25rem; /* Decrease top margin for smaller screens */
   border-top: 1px solid #FFFFFF; /* White border to visually separate from main content */
-  padding-top: 1rem;
+  padding-top: 0.25rem; /* Decrease top padding for smaller screens */
 }
