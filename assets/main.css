@@ -225,8 +225,8 @@ nav a {
 footer {
   background-color: #000; /* Set the footer background to black */
   color: #FFF; /* Set text color to white for contrast */
-  padding: 40px 40px; /* Increase padding to make the footer bigger */
-  font-family: 'Arial', sans-serif; /* Keep consistent font family */
+  padding: 20px; /* Increase padding to make the footer bigger */
+  font-family: 'Georgia', sans-serif; /* Keep consistent font family */
   text-align: center;
   border-top: 1px solid #444; /* Light grey border for subtle separation */
   width: 100%; /* Ensure the footer extends full width of the viewport */
