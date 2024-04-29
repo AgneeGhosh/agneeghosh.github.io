@@ -2,57 +2,39 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #F5F5F5; /* Beige background */
-  color: #333333; /* Dark text color */
-  font-family: 'Georgia', 'Helvetica', sans-serif; /* Default font family */
-  font-size: 16px; /* Set body text size to 16px for better readability */
+  background-color: #F5F5F5;
+  color: #333333;
+  font-family: 'Georgia', 'Helvetica', sans-serif;
+  font-size: 16px;
 }
 
 /* Layout adjustments */
 .centered-content {
   width: 100%;
   max-width: 960px;
-  margin: 80px auto 0; /* Top margin adjusted */
+  margin: 80px auto 0;
   padding: 20px;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 768px) {
-  .centered-content {
-      padding: 10px; /* Reduced padding */
-      margin-top: 60px; /* Increased top margin to accommodate fixed header */
-  }
 }
 
 /* Responsive Typography */
 header h1, header .subtitle, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  font-size: calc(1rem + 1.5vw); /* Dynamic scaling based on viewport width */
+  font-size: calc(1rem + 1.5vw);
 }
 
 header .subtitle {
   text-align: center;
   font-family: 'Cheltenham', serif;
-  font-size: 1.6em; /* Adjusted for consistent scaling */
+  font-size: 1.6em;
   margin-bottom: 10px;
 }
 
 h2, h3, h4, h5, h6 {
   margin: 1em 0 0;
   font-family: 'Georgia', serif;
-  color: #243407; /* Consistent dark green */
-  font-size: 1.4em; /* Consistent scaling */
-}
-
-/* Links */
-a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #388E3C;
+  color: #243407;
+  font-size: 1.4em;
 }
 
 /* Images */
@@ -64,21 +46,15 @@ img {
 }
 
 /* Floats */
-.float-left {
+.float-left, .float-right {
   float: none;
-  margin-right: 0;
-}
-
-.float-right {
-  float: none;
-  margin-left: 0;
+  margin: 0;
 }
 
 /* Figures */
 figure, figcaption {
   margin: 0 0 1em;
   font-size: 14px;
-  font-weight: normal;
   text-align: center;
 }
 
@@ -91,28 +67,26 @@ figcaption {
   background-color: #c0d4c0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 15px;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   display: flex;
-  flex-direction: column;
-  font-family: 'Georgia', 'Helvetica', sans-serif;
-  font-size: 1.2em;
-  transition: top 0.3s;
+  justify-content: space-between; /* Changed for aligning nav and menu icon */
+  align-items: center;
+  flex-direction: row; /* Changed for proper layout */
 }
 
 /* Header Logo */
 .site-header img {
   height: auto;
   width: 120px;
-  margin-bottom: 5px;
 }
 
 /* Navigation */
 nav {
-  width: 100%;
+  width: auto;
 }
 
 nav ul {
@@ -121,6 +95,7 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto; /* Align nav to the right */
 }
 
 nav ul li {
@@ -131,45 +106,35 @@ nav a {
   color: #333333;
   font-weight: 600;
   transition: color 0.3s ease;
-  display: block; /* Make links block for better touch targets */
-}
-
-nav a:hover {
-  color: #1B5E20;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
   .site-header {
-    position: static;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px;
   }
 
   .menu-icon {
     display: block;
-    cursor: pointer;
   }
 
   nav ul {
-    display: none;
+    display: none; /* Hide the navigation on small screens */
     flex-direction: column;
     position: absolute;
     background-color: #c0d4c0;
     width: 100%;
     top: 100%;
-    left: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul li {
-    text-align: center;
-    width: 100%;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   nav.active ul {
     display: flex;
+  }
+
+  .menu-icon {
+    display: flex; /* Show the menu icon on small screens */
   }
 }
 
@@ -179,7 +144,6 @@ nav a:hover {
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
-  margin-top: 5px;
 }
 
 .menu-icon div {
@@ -226,28 +190,33 @@ nav a:hover {
   line-height: 1.6; /* Adjust line height for better spacing */
   background-color: #f9f9f9; /* Light gray background */
   color: #333333; /* Dark text color */
-  font-style: normal; /* Normal style for better readability */
+  font-style: italic; /* Italicize the text for emphasis */
+  font-family: 'Georgia', serif; /* Keep the elegant serif style */
+  border-left: 5px solid #4CAF50; /* Add a thematic left border */
   position: relative; /* Position relative for the quotation marks */
-  font-family: 'Georgia', serif; /* Using Georgia for a smooth transition from cursive */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 /* Quotation Mark */
 .quote:before,
 .quote:after {
-  content: '\201C'; /* Left double quotation mark for before and right for after */
-  font-size: 2em; /* Adjust size as needed, smaller than initial suggestion for better integration */
-  color: #4CAF50; /* Green color to add a thematic touch */
-  position: absolute; /* Position absolute for proper placement */
+  content: '\"'; /* Using typographic quotation marks */
+  font-size: 4em; /* Large size for visibility */
+  color: #4CAF50; /* Thematic green to match the border */
+  position: absolute; /* Absolute positioning for placement */
+  font-weight: bold; /* Bold to make them stand out */
 }
 
 .quote:before {
-  top: -10px; /* Adjust vertical position */
+  top: -0.6em; /* Adjust vertical position */
   left: -10px; /* Adjust horizontal position for the left quotation mark */
+  content: '“'; /* Left double quotation mark */
 }
 
 .quote:after {
-  bottom: -10px; /* Adjust vertical position */
+  bottom: -0.6em; /* Adjust vertical position */
   right: -10px; /* Adjust horizontal position for the right quotation mark */
+  content: '”'; /* Right double quotation mark */
 }
 
 /* Responsive Design Adjustments for Quotes */
@@ -261,11 +230,9 @@ nav a:hover {
 
   .quote:before,
   .quote:after {
-    font-size: 1.5em; /* Decrease size for smaller screens */
-    top: -5px; /* Adjust vertical position for mobile */
-    left: -5px; /* Adjust horizontal position for the left quotation mark on mobile */
-    bottom: -5px; /* Adjust vertical position for mobile */
-    right: -5px; /* Adjust horizontal position for the right quotation mark on mobile */
+    font-size: 3em; /* Decrease size for smaller screens */
+    top: -10px; /* Adjust vertical position for mobile */
+    right: -10px; /* Adjust horizontal position for the right quotation mark on mobile */
   }
 }
 
