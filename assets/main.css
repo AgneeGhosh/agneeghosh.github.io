@@ -139,20 +139,54 @@ nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  /* Adapt font sizes and padding for smaller devices */
-  header h1, .subtitle, h2, h3, h4, h5, h6 {
-    font-size: calc(100% + 0.5vw);
-  }
-
-  /* Increase touch area for navigation */
-  nav ul li, nav a {
-    padding: 10px;
-  }
-
-  /* Static header on small screens */
   .site-header {
-      position: static;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #c0d4c0;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none; /* Only visible on small screens */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.menu-icon div {
+  background-color: black;
+  height: 2px;
+  margin: 3px 0;
+  width: 30px;
 }
 
 /* Additional Styles */
