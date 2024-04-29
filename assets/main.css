@@ -45,9 +45,12 @@ img {
   margin: 0 auto 1em;
 }
 
+
+
 /* Floats */
-.float-left, .float-right {
-  float: none;
+.float-left {
+  float: left;
+  width: 50%;
   margin: 0;
 }
 
