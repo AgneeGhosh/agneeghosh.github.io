@@ -197,7 +197,7 @@ nav a:hover {
 /* Footer */
 footer {
   margin-top: auto; /* Push footer to the bottom */
-  background-image: url('https://unsplash.com/photos/green-leaf-s9vNTRLoWl8'); /* Update URL for direct background image use */
+  background-image: url('./Footer-background.jpg'); /* Update URL for direct background image use */
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
   background-size: cover; /* Cover the entire background */
   background-position: center; /* Center the background image */
