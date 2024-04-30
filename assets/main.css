@@ -24,6 +24,25 @@ header h1, header .subtitle, h2, h3, h4, h5, h6 {
   font-size: calc(1rem + 1.5vw);
 }
 
+/* Typography Adjustments for Smaller Screens */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1, header .subtitle, h2, h3, h4, h5, h6 {
+    font-size: calc(1rem + 1vw);
+  }
+
+  header .subtitle {
+    font-size: 1.4em;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+  }
+}
+
 header .subtitle {
   text-align: center;
   font-family: 'Cheltenham', serif;
@@ -46,11 +65,34 @@ img {
   margin: 0 auto 1em;
 }
 
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Floats */
 .float-right {
   float: right;
   width: 40%;
   margin-left: 1rem;
+}
+
+/* Responsive Floats */
+@media screen and (max-width: 768px) {
+  .float-right {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Responsive Padding and Margin in Layout */
+@media screen and (max-width: 768px) {
+  .centered-content {
+    padding: 15px;
+    margin: 60px auto 0;
+  }
 }
 
 /* Figures */
@@ -113,31 +155,34 @@ nav a {
   width: 30px;
 }
 
+/* Menu and Header Adjustments for Smaller Screens */
 @media screen and (max-width: 768px) {
   .site-header {
-    padding: 10px;
+    position: static; /* Make the header static on small screens to prevent overlap */
   }
-
+  
+  nav li {
+    display: block; /* Stack the links vertically */
+    margin: 10px 0; /* Add vertical space between links */
+  }
+  
   .menu-icon {
-    display: block;
+    /* Position the menu icon in the top right corner */
     position: absolute;
-    right: 10px; /* Positions the menu on the top right */
-    top: 10px;
-  }
-
-  nav ul {
-    display: none; /* Hide the navigation on small screens */
-    flex-direction: column;
-    position: absolute;
-    background-color: #c0d4c0;
-    width: 100%;
-    top: 100%;
+    top: 0;
     right: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
-
+  
   nav.active ul {
-    display: flex;
+    display: block; /* Show the nav as block to stack items */
+    position: static;
+    width: auto;
+    box-shadow: none;
+  }
+  
+  nav a {
+    display: block; /* Full-width link targets are easier to tap */
+    padding: 10px; /* Add padding for larger tap targets */
   }
 }
 
@@ -154,7 +199,7 @@ nav a {
   font-weight: bold; /* Keep bold for emphasis */
   text-align: center; /* Center align text */
   margin-bottom: 15px; /* Maintain bottom margin */
-  color: #333333; /* Darker text color for better contrast */
+  color: #0f2914; /* Darker text color for better contrast */
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* White shadow to soften text edge */
 }
 
@@ -172,15 +217,15 @@ nav a {
 
 /* Quote */
 .quote {
-  padding: 20px; /* Increase padding for better visual appeal */
-  margin: 20px 0; /* Add margin to separate from surrounding content */
-  font-size: 1.8em; /* Adjust font size for better readability */
-  line-height: 1.6; /* Adjust line height for better spacing */
+  padding: 10px; /* Reduced padding for a smaller box */
+  margin: 20px 0; /* Maintain margin to separate from surrounding content */
+  font-size: 1.2em; /* Smaller font size for the quote */
+  line-height: 1.4; /* Adjust line height for better spacing */
   background-color: #f9f9f9; /* Light gray background */
   color: #333333; /* Dark text color */
   font-style: italic; /* Italicize the text for emphasis */
   font-family: 'Georgia', serif; /* Keep the elegant serif style */
-  border-left: 5px solid #4CAF50; /* Add a thematic left border */
+  border-left: 5px solid #4CAF50; /* Maintain thematic left border */
   position:relative; /* Position relative for the quotation marks */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
@@ -188,39 +233,37 @@ nav a {
 /* Quotation Mark */
 .quote:before,
 .quote:after {
-  content: '\"'; /* Using typographic quotation marks */
-  font-size: 4em; /* Large size for visibility */
+  font-size: 3em; /* Smaller size for the quotation marks */
   color: #4CAF50; /* Thematic green to match the border */
   position: absolute; /* Absolute positioning for placement */
-  font-weight: bold; /* Bold to make them stand out */
 }
 
 .quote:before {
-  top: -0.6em; /* Adjust vertical position */
-  left: -10px; /* Adjust horizontal position for the left quotation mark */
+  top: -10px; /* Adjust vertical position for the smaller size */
+  left: 5px; /* Adjust horizontal position for the left quotation mark */
   content: '“'; /* Left double quotation mark */
 }
 
 .quote:after {
-  bottom: -0.6em; /* Adjust vertical position */
-  right: -10px; /* Adjust horizontal position for the right quotation mark */
+  bottom: -10px; /* Adjust vertical position for the smaller size */
+  right: 5px; /* Adjust horizontal position for the right quotation mark */
   content: '”'; /* Right double quotation mark */
 }
 
 /* Responsive Design Adjustments for Quotes */
 @media screen and (max-width: 768px) {
   .quote {
-    padding: 15px; /* Decrease padding for smaller screens */
-    margin: 15px 0; /* Add margin to separate from surrounding content */
-    font-size: 1.5em; /* Decrease font size for smaller screens */
-    line-height: 1.5; /* Adjust line height for better spacing */
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin: 15px 0; /* Smaller margin for tighter layout */
+    font-size: 1em; /* Further decrease font size for smaller screens */
+    line-height: 1.3; /* Adjust line height for better spacing on smaller screens */
   }
 
   .quote:before,
   .quote:after {
-    font-size: 3em; /* Decrease size for smaller screens */
-    top: -10px; /* Adjust vertical position for mobile */
-    right: -10px; /* Adjust horizontal position for the right quotation mark on mobile */
+    font-size: 2.5em; /* Further decrease size for the quotation marks on smaller screens */
+    top: -5px; /* Adjust vertical position for mobile */
+    right: 5px; /* Adjust horizontal position for the right quotation mark on mobile */
   }
 }
 
@@ -245,7 +288,7 @@ footer {
 
 .footer-logo img {
   width: auto; /* Keeps image ratio */
-  height: 50px; /* Sets the height of the logo */
+  height: 80px; /* Increased height of the logo for visibility */
 }
 
 .footer-links {
@@ -253,16 +296,19 @@ footer {
   flex-direction: column; /* Stacks links vertically */
 }
 
-.footer-contact p, .footer-bottom-text {
-  color: #ddd; /* Slightly dim text for less emphasis */
-}
-
 .footer-contact p {
+  color: #fff; /* White color for text */
   margin: 5px 0; /* Spacing between text */
 }
 
+.footer-contact strong {
+  font-size: 20px; /* Larger font size for 'Say Hi' */
+  font-style: italic; /* Italicize 'Say Hi' */
+  color: #8ccab9; /* Green color for 'Say Hi' */
+}
+
 .footer-link {
-  color: #fff; /* White color for links for better visibility */
+  color: #8ccab9; /* Green color to match 'Say Hi' */
   text-decoration: underline; /* Underline for linked text */
   margin-bottom: 10px; /* Spacing below the link */
 }
@@ -281,7 +327,7 @@ footer {
 }
 
 .footer-socials img {
-  height: 30px; /* A little bigger icon size */
+  height: 40px; /* Increased size for social media icons */
   width: auto; /* Maintain aspect ratio */
 }
 
@@ -290,4 +336,24 @@ footer {
   margin-top: 15px; /* Space above the copyright text */
   font-size: 14px; /* Slightly smaller font size */
   opacity: 0.6; /* Make the text slightly transparent */
+}
+
+/* Footer Adjustments for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack footer items vertically */
+  }
+  
+  .footer-logo img {
+    margin-bottom: 10px; /* Add space below logo */
+  }
+
+  .footer-socials {
+    margin-top: 10px; /* Add space above social links */
+  }
+}
+
+/* General Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Other responsive adjustments can be added here */
 }
