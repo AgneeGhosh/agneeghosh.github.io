@@ -4,9 +4,10 @@ html, body {
   background-color: #fff;
   color: #333;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
+  font-size: 20px; /* Increased from 16px to 20px */
   line-height: 1.8;
 }
+
 
 /* Layout adjustments */
 .centered-content {
@@ -23,10 +24,16 @@ header h1 {
   font-size: 28px;
   margin-bottom: 8px;
 }
+/* Subtitle color change to white */
 header .subtitle {
-  font-size: 18px;
-  font-style: italic;
-  color: #666;
+  color: #fff; /* White color */
+}
+
+/* Byline enhancements */
+.byline {
+  font-size: 18px; /* Increased font size */
+  color: #333; /* Darker text color for better visibility */
+  font-weight: bold; /* Bold text for prominence */
 }
 
 /* Responsive Typography */
