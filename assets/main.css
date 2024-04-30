@@ -1,21 +1,32 @@
-/* Reset CSS */
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #F5F5F5;
-  color: #333333;
-  font-family: 'Georgia', 'Helvetica', sans-serif;
-  font-size: 18px;
-  scroll-behavior: smooth;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 /* Layout adjustments */
 .centered-content {
   width: 100%;
-  max-width: 960px;
-  margin: 80px auto 0;
+  max-width: 600px; /* Narrower for more focused reading */
+  margin: 40px auto;
   padding: 20px;
   box-sizing: border-box;
+}
+
+/* Typography */
+header h1 {
+  font-family: 'NYTCheltenham', serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+header .subtitle {
+  font-size: 18px;
+  font-style: italic;
+  color: #666;
 }
 
 /* Responsive Typography */
@@ -59,10 +70,8 @@ h2, h3, h4, h5, h6 {
 
 /* Images */
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 1em;
 }
 
 /* Responsive Images */
@@ -194,13 +203,9 @@ nav a {
 
 /* Byline */
 .byline {
-  font-size: 1.1em; /* Slightly larger font size */
-  font-style: italic; /* Maintain italic style */
-  font-weight: bold; /* Keep bold for emphasis */
-  text-align: center; /* Center align text */
-  margin-bottom: 15px; /* Maintain bottom margin */
-  color: #0f2914; /* Darker text color for better contrast */
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* White shadow to soften text edge */
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
 }
 
 .author-name {
@@ -268,13 +273,13 @@ nav a {
 }
 
 /* Minimalist Footer Styles */
+/* Footer */
 footer {
-  background-color: #000; /* Black background for the footer */
-  color: #fff; /* White text color for contrast */
-  padding: 20px; /* Padding around the content */
-  font-family: 'Arial', sans-serif; /* Simple and modern font */
-  font-size: 16px; /* Base font size */
-  line-height: 1.6; /* Spacing between lines for readability */
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
 .footer-container {
@@ -291,9 +296,8 @@ footer {
   height: 80px; /* Increased height of the logo for visibility */
 }
 
-.footer-links {
-  display: flex;
-  flex-direction: column; /* Stacks links vertically */
+.footer-link {
+  color: #0c64ce;
 }
 
 .footer-contact p {
@@ -314,7 +318,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #bbb; /* Change color on hover for visual feedback */
+  color: #082753;
 }
 
 .footer-socials {
