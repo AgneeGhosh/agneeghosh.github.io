@@ -7,7 +7,51 @@ html, body {
   font-size: 20px; /* Increased from 16px to 20px */
   line-height: 1.8;
 }
+#hero-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
+#hero-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#hero-video header {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  width: 75vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px; /* Adds some padding around the text */
+  border-radius: 5px; /* Optionally rounds the corners */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow for better visibility */
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+video.centered-video {
+  width: 80%; /* Responsive width */
+  max-width: 640px; /* Maximum width */
+  margin: 20px auto; /* Margin for top and bottom, auto centers horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  border-radius: 8px; /* Rounded corners */
+}
 /* Layout adjustments */
 .centered-content {
   width: 100%;
@@ -36,29 +80,23 @@ header .subtitle {
   margin-bottom: 20px;
 }
 
-.collage {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 600px; /* Matched to the centered-content max-width */
-  margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to match other content styling */
+.masonry {
+  column-count: 3; /* Set the number of columns */
+  column-gap: 10px; /* Set the gap between columns */
 }
 
-.frame {
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #fff; /* White border for a clean separation */
-  border-radius: 8px; /* Soften the edges to match other images */
-  overflow: hidden; /* Ensures the images don't overflow their borders */
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
 
-.large { grid-area: 1 / 1 / 3 / 2; }
-.small { grid-area: 1 / 2 / 2 / 3; }
-.medium { grid-area: 2 / 2 / 3 / 3; }
-.vertical { grid-area: 3 / 1 / 4 / 2; }
-.small.last { grid-area: 3 / 2 / 4 / 3; }
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .masonry {
+    column-count: 2; /* Adjust to 2 columns for smaller screens */
+  }
+}
 
 /* Responsive Typography */
 header h1, header .subtitle, h2, h3, h4, h5, h6 {

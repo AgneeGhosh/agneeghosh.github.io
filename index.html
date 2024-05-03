@@ -8,57 +8,7 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        #hero-video {
-          position: relative;
-          height: 100vh;
-          overflow: hidden;
-        }
-      
-        #hero-video video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          z-index: 1;
-        }
-      
-        #hero-video header {
-          position: absolute;
-          z-index: 10;
-          color: white;
-          width: 75vw;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-          padding: 10px; /* Adds some padding around the text */
-          border-radius: 5px; /* Optionally rounds the corners */
-          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow for better visibility */
-        }
-      
-        body {
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-        }
-      
-        .centered-content {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-      
-        video.centered-video {
-          width: 80%; /* Responsive width */
-          max-width: 640px; /* Maximum width */
-          margin: 20px auto; /* Margin for top and bottom, auto centers horizontally */
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
-          border-radius: 8px; /* Rounded corners */
-        }
+     
       
       </style>
       
@@ -83,13 +33,12 @@
                 Susan Harting, 66, who lives on 35th Ave, Oakland, believes there should be equal distribution of trees in Oakland, CA.
             </p>            
 
-            <div class="collage">
-                <div class="frame large" style="background-image: url('./assets/IMG_8190.jpg');"></div>
-                <div class="frame small" style="background-image: url('./assets/IMG_8197.jpg');"></div>
-                <div class="frame medium" style="background-image: url('./assets/IMG_8212.jpg');"></div>
-                <div class="frame vertical" style="background-image: url('./assets/IMG_8219.jpg');"></div>
-                <div class="frame small last" style="background-image: url('./assets/IMG_8225.jpg');"></div>
-            </div>
+            <section class="masonry">
+                <img class="masonry-item" src="./assets/IMG_8190.jpg" alt="Image 1">
+                <img class="masonry-item" src="./assets/IMG_8197.jpg" alt="Image 2">
+                <img class="masonry-item" src="./assets/IMG_8212.jpg" alt="Image 3">
+                <img class="masonry-item" src="./assets/IMG_8225.jpg" alt="Image 4">
+            </section>              
             
 
             <p>
