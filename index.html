@@ -9,52 +9,59 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         #hero-video {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
+          position: relative;
+          height: 100vh;
+          overflow: hidden;
         }
+      
         #hero-video video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
         }
+      
         #hero-video header {
-            position: absolute;
-            z-index: 10;
-            color: white;
-            width: 75vw;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-            padding: 10px; /* Adds some padding around the text */
-            border-radius: 5px; /* Optionally rounds the corners */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow for better visibility */
+          position: absolute;
+          z-index: 10;
+          color: white;
+          width: 75vw;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+          padding: 10px; /* Adds some padding around the text */
+          border-radius: 5px; /* Optionally rounds the corners */
+          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow for better visibility */
         }
+      
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
         }
+      
         .centered-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
         }
+      
         video.centered-video {
-            width: 80%; /* Responsive width */
-            max-width: 640px; /* Maximum width */
-            margin: 20px auto; /* Margin for top and bottom, auto centers horizontally */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for better visibility */
-            border-radius: 8px; /* Rounded corners */
+          width: 80%; /* Responsive width */
+          max-width: 640px; /* Maximum width */
+          margin: 20px auto; /* Margin for top and bottom, auto centers horizontally */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+          border-radius: 8px; /* Rounded corners */
         }
-    </style>
+      
+      </style>
+      
 </head>
 <body>
     <figure id="hero-video">
@@ -74,7 +81,16 @@
 
             <p>
                 Susan Harting, 66, who lives on 35th Ave, Oakland, believes there should be equal distribution of trees in Oakland, CA.
-            </p>
+            </p>            
+
+            <div class="collage">
+                <div class="frame large" style="background-image: url('./assets/IMG_8190.jpg');"></div>
+                <div class="frame small" style="background-image: url('./assets/IMG_8197.jpg');"></div>
+                <div class="frame medium" style="background-image: url('./assets/IMG_8212.jpg');"></div>
+                <div class="frame vertical" style="background-image: url('./assets/IMG_8219.jpg');"></div>
+                <div class="frame small last" style="background-image: url('./assets/IMG_8225.jpg');"></div>
+            </div>
+            
 
             <p>
               Volunteers assemble on a wet field under a bright, sunny sky, shovels in hand. There is a mixture of anticipation and the aroma of damp grass. Forming a line, they exchange smiles and small talk while their rubber boots squelch in the mud. They wait with anticipation for instructions. Some take pictures, documenting the start of their impact on the planet. They are brought together by a shared sense of purpose, which brings together people from many walks of life. They started digging holes for seedlings as soon as the organizer gave them the go-ahead. Their bond with the earth and one another becomes stronger with each shovel stroke.
