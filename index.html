@@ -8,7 +8,55 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <style>
-     .center-container {
+        /* Hero Video Section */
+        #hero-video {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #hero-video video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        #hero-video header {
+            position: absolute;
+            z-index: 10;
+            color: white;
+            width: 75vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 10px; /* Adds some padding around the text */
+            border-radius: 5px; /* Optionally rounds the corners */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow for better visibility */
+        }
+
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        video.centered-video {
+            width: 80%; /* Responsive width */
+            max-width: 640px; /* Maximum width */
+            margin: 20px auto; /* Margin for top and bottom, auto centers horizontally */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .center-container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,23 +87,20 @@
             font-size: 0.7rem;
             color: #555;
         }
-      </style>
-      
+    </style>
 </head>
 <body>
-    <figure id="hero-video">
-        <video src="./assets/trees-in-urban-areas.mp4" alt="Aerial view of tree planting activities in East Oakland" autoplay muted loop></video>
+    <section id="hero-video">
+        <video src="./assets/trees-in-urban-areas.mp4" autoplay muted loop></video>
         <header role="banner">
             <h1>East Oakland Communities Unite to Plant Trees and Transform Their Neighborhoods</h1>
             <p class="subtitle">Discover East Oakland's dynamic community programs, where local organizations are planting trees to improve the urban landscape.</p>
         </header>          
-    </figure>
+    </section>
     <main class="centered-content">
         <article id="main-article">
             <p class="byline">
-                <p class="byline">
-                    By <a href="https://journalism.berkeley.edu/person/agnee-ghosh/">Agnee Ghosh</a> on <time datetime="2022-03-14">March 14, 2022</time>
-                </p>                
+                By <a href="https://journalism.berkeley.edu/person/agnee-ghosh/">Agnee Ghosh</a> on <time datetime="2022-03-14">March 14, 2022</time>                
             </p>
 
             <p>
