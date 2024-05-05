@@ -253,6 +253,29 @@ nav a {
   }
 }
 
+/* Aside Quote Design */
+.quote {
+  border-left: 4px solid #8ccab9; /* Matching Green Color */
+  background-color: #f4f4f4; /* Light Background */
+  color: #243407;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+  font-style: italic;
+  font-family: 'Georgia', serif; /* Serif font */
+}
+
+.quote p {
+  margin: 0 0 8px;
+}
+
+.quote .quoted {
+  font-style: normal;
+  color: #666;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   font-family: 'Arial', sans-serif;
